@@ -1,27 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.shadow{
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.max-width {
+  @apply max-w-[1920px] mx-auto;
 }
+
+.container{
+  padding: 0 60px;
+}
+
+.font-mulish{
+  font-family: 'Mulish', sans-serif;
+}
+
+.font-sans{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.logo-line {
+  stroke: #C47F3F;
+  stroke-dasharray: 400;
+  stroke-dashoffset: -400;
+  transition: stroke-dashoffset 0.4s linear;
+}
+
+.logo:hover .logo-line {
+  stroke-dashoffset: 0;
+}
+
+/* .logo {
+  transform-origin: left;
+  transition: background-color 1s ease;
+}
+
+.logo:hover {
+  background-color: gray; 
+} */
+
+.line-main{
+  position: absolute;
+}
+/* 
+.line-slider{
+
+  stroke-dasharray: 400;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.9s linear;
+}
+
+
+.main-link:hover .line-slider {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 400;
+} */
