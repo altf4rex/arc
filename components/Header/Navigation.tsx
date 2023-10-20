@@ -10,7 +10,7 @@ import Link from 'next/link'
     <div className='flex'>
         {
             pages.map((h) => 
-                <Link key={h.page} href={`${h.pageSlug}`} className={`link ${pathname === h.pageSlug ? 'text-primary' : 'text-main'} mr-12 font-mulish text-main text-sm font-normal hover:text-primaryHover`}>{h.page}</Link>
+                <Link key={h.page} href={`${h.pageSlug}`} className={`link ${pathname === h.pageSlug ? 'text-primary' : 'text-main'} mr-12 text-mulish text-main text-sm font-normal font-semibold hover:text-primaryHover`}>{h.page}</Link>
             )
         }
     </div>

@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-bgPage'>
+    <html lang="en" className='bg-mainBg'>
       <body className='max-width container'>
         <Provider>
           <Header/>

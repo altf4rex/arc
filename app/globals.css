@@ -24,11 +24,11 @@
   padding: 0 60px;
 }
 
-.font-mulish{
+.text-mulish{
   font-family: 'Mulish', sans-serif;
 }
 
-.font-sans{
+.text-sans{
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -68,3 +68,12 @@
   stroke-dasharray: 900;
   stroke-dashoffset: 400;
 } */
+
+
+.main-link:hover p{
+  color: #8F7464;
+}
+
+.main-link:hover path{
+  stroke: #8F7464;
+}

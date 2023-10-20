@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { projects } from "@/data/data";
+import { carouselProjects } from "@/data/data";
 import Link from "next/link"
 import { useContext } from 'react';
 import {Context} from "@/components/provider"
@@ -9,8 +9,8 @@ import CarouselButton from "./CarouselButton";
 const Carousel = () => {
   const context = useContext(Context);
   return (
-    <div className="flex w-max overflow-hidden">
-      {projects.map((p) => (
+    <div className="flex w-max relative duration-500">
+      {carouselProjects.map((p) => (
         <div key={p.id} className={`relative ${context?.currentIndex === p.id ? 'visible' : 'hidden'}`}>
           <Image
             className="relative z-0 brightness-[.65] "
@@ -36,8 +36,8 @@ const Carousel = () => {
               />
             </svg>
             <div className="mt-12 ml-12">
-            <h3 className="mb-6 text-left font-sans text-main text-base font-normal uppercase">Architecture</h3>
-            <h1 className="text-left font-mulish text-main text-8xl font-normal">
+            <h3 className="mb-6 text-left text-sans text-main text-base font-normal uppercase">Architecture</h3>
+            <h1 className="text-left text-mulish text-main text-8xl font-normal">
               Home
               <br />
               <span className="even:text-primary">
@@ -46,51 +46,27 @@ const Carousel = () => {
               </span>
               Forest
             </h1>
-            <Link href={p.slug} className="main-link mt-12 flex w-[140px] hover:bg-primaryHover">
-              <p className="font-bold whitespace-nowrap font-sans text-main text-base">See project</p>
-              <Image
-              className="w-3 h-5"
-                src="/white-arrow.svg"
-                alt="arrow"
-                width={12}
-                height={20}
-              />
+            <Link href={p.slug} className="main-link absolute flex justify-between mt-10 w-[140px]">
+              <p className="font-bold whitespace-nowrap text-sans text-main text-base ">See project</p>
+              <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.322 11.0245L1.00001 0.999995" stroke="white"/>
+                <path d="M1 21L12.322 10.9755" stroke="white"/>
+              </svg>
             </Link>
             </div>
           </div>
-          <CarouselButton projectId={1} projectName={p.name}/>
-          <CarouselButton projectId={2} projectName={p.name}/>
-          <CarouselButton projectId={3} projectName={p.name}/>
         </div>
       ))}
+      <div className="flex absolute bottom-0 right-0 bg-mainBg">
+      {carouselProjects.map((p, i) => (
+        <CarouselButton key={p.id} projectId={p.id} projectName={p.name} index={i}/>
+      ))}
+      </div>
     </div>
   );
 };
 
 export default Carousel
-
-// const Carousel = () => {
-  
-
-//   return (
-//     <div className="carousel">
-//       <div className="carousel-container">
-//         {items.map((item, index) => (
-//           <div
-//             key={index}
-//             className={`carousel-slide ${index === currentIndex ? 'active' : ''}`}
-//           >
-//             <img src={item.image} alt={item.alt} />
-//           </div>
-//         ))}
-//       </div>
-//       <button onClick={prevSlide}>Предыдущий</button>
-//       <button onClick={nextSlide}>Следующий</button>
-//     </div>
-//   );
-// };
-
-
 
 
 
