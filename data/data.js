@@ -48,7 +48,7 @@ export const mainProjects = [
         img: "/mainProject4.jpg",
         squareImages: 
             {
-              src: "/mainProject4.jpg",
+              src: "/project1.jpg",
               width: 290,
               height: 290,
             },
@@ -62,7 +62,7 @@ export const mainProjects = [
         img: "/mainProject.jpg",
         squareImages: 
             {
-              src: "/mainProject.jpg",
+              src: "/project3.jpg",
               width: 290,
               height: 290,
             },

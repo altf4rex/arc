@@ -24,12 +24,12 @@
   padding: 0 60px;
 }
 
-.text-mulish{
-  font-family: 'Mulish', sans-serif;
-}
-
 .text-sans{
   font-family: 'Work Sans', sans-serif;
+}
+
+.text-mulish{
+  font-family: 'Mulish', sans-serif;
 }
 
 .logo-line {
@@ -43,32 +43,9 @@
   stroke-dashoffset: 0;
 }
 
-/* .logo {
-  transform-origin: left;
-  transition: background-color 1s ease;
-}
-
-.logo:hover {
-  background-color: gray; 
-} */
-
 .line-main{
   position: absolute;
 }
-/* 
-.line-slider{
-
-  stroke-dasharray: 400;
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 0.9s linear;
-}
-
-
-.main-link:hover .line-slider {
-  stroke-dasharray: 900;
-  stroke-dashoffset: 400;
-} */
-
 
 .main-link:hover p{
   color: #8F7464;
@@ -76,4 +53,23 @@
 
 .main-link:hover path{
   stroke: #8F7464;
+}
+
+.hover-project-img{
+  
+}
+
+.hover-project-text {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out;
+}
+
+.hover-project-block:hover .hover-project-img {
+  display: none;
+}
+
+.hover-project-block:hover .hover-project-text {
+  opacity: 1;
+  visibility: visible;
 }
