@@ -35,7 +35,7 @@
 .logo-line {
   stroke: #C47F3F;
   stroke-dasharray: 400;
-  stroke-dashoffset: -400;
+  stroke-dashoffset: 400;
   transition: stroke-dashoffset 0.4s linear;
 }
 
@@ -54,9 +54,20 @@
 .main-link:hover path{
   stroke: #8F7464;
 }
+/* 
+.hover-project-block {
+  transform: translateX(-100%); 
+  transition: transform 2s ease-out;
+}
+
+.hover-project-block  {
+  transform: translateX(0); 
+} */
 
 .hover-project-img{
-  
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-out;
 }
 
 .hover-project-text {
@@ -66,10 +77,58 @@
 }
 
 .hover-project-block:hover .hover-project-img {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hover-project-block:hover .hover-project-text {
   opacity: 1;
   visibility: visible;
+}
+
+
+.grid-container  {
+  display: grid; 
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  height: 100%;
+}
+  
+.item-1 {
+
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 2;
+   
+}
+.item-4 {
+
+   grid-row-start: 2;
+   grid-column-start: 2;
+
+   grid-row-end: 3;
+   grid-column-end: 4;
+   
+}
+.item-2{
+
+   grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 2;
+   grid-column-end: 4;
+   
+}
+
+.item-3{
+
+   grid-row-start: 1;
+   grid-column-start: 2;
+
+   grid-row-end: 2;
+   grid-column-end: 3;
+   
 }

@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image";
 import { carouselProjects } from "@/data/data";
-import Link from "next/link"
 import { useContext } from 'react';
 import {Context} from "@/components/provider"
 import CarouselButton from "./CarouselButton";
+import ButtonLink from "../ButtonLink";
 
 const Carousel = () => {
   const context = useContext(Context);
@@ -37,7 +37,7 @@ const Carousel = () => {
             </svg>
             <div className="mt-12 ml-12">
             <h3 className="mb-6 text-left text-sans text-main text-base font-normal uppercase">Architecture</h3>
-            <h1 className="text-left text-mulish text-main text-8xl font-normal">
+            <h1 className="mb-[60px] text-left text-mulish text-main text-8xl font-normal">
               Home
               <br />
               <span className="even:text-primary">
@@ -46,13 +46,7 @@ const Carousel = () => {
               </span>
               Forest
             </h1>
-            <Link href={p.slug} className="main-link absolute flex justify-between mt-10 w-[140px]">
-              <p className="font-bold whitespace-nowrap text-sans text-main text-base ">See project</p>
-              <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.322 11.0245L1.00001 0.999995" stroke="white"/>
-                <path d="M1 21L12.322 10.9755" stroke="white"/>
-              </svg>
-            </Link>
+            <ButtonLink slug={p.slug} text={"See project"}/>
             </div>
           </div>
         </div>

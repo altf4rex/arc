@@ -32,8 +32,9 @@ export const mainProjects = [
         slug: "projects/home-in-forest",
         description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
         fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-1",
         img: "/project2.jpg",
-        verticalImage: {
+        formatOfImg: {
             src: "/project2.jpg",
             width: 580,
             height: 1190,
@@ -45,12 +46,13 @@ export const mainProjects = [
         slug: "projects/home-in-forest",
         description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
         fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        img: "/mainProject4.jpg",
-        squareImages: 
+        type: "item-2",
+        img: "/project1.jpg",
+        formatOfImg: 
             {
               src: "/project1.jpg",
-              width: 290,
-              height: 290,
+              width: 580,
+              height: 580,
             },
     },
     {
@@ -59,12 +61,13 @@ export const mainProjects = [
         slug: "projects/home-in-forest",
         description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
         fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
         img: "/mainProject.jpg",
-        squareImages: 
+        formatOfImg: 
             {
               src: "/project3.jpg",
-              width: 290,
-              height: 290,
+              width: 580,
+              height: 580,
             },
     },
     {
@@ -73,8 +76,9 @@ export const mainProjects = [
         slug: "projects/home-in-forest",
         description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
         fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        img: "/project4.jpg",
-        horizontalImage: {
+        type: "item-4",
+        img: "/project4.jpg", 
+        formatOfImg: {
             src: "/project4.jpg",
             width: 1190,
             height: 580,
