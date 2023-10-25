@@ -9,7 +9,7 @@ import ButtonLink from "../ButtonLink";
 const Carousel = () => {
   const context = useContext(Context);
   return (
-    <div className="flex w-max relative duration-500">
+    <div className="flex w-max relative">
       {carouselProjects.map((p) => (
         <div key={p.id} className={`relative ${context?.currentIndex === p.id ? 'visible' : 'hidden'}`}>
           <Image

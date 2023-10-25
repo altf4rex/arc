@@ -23,8 +23,8 @@ const MainProjects = () => {
         if (containerRef.current) {
           const containerHeight = containerRef.current.offsetHeight;
           const scrollPosition = window.scrollY;
-          const scaleFactor = 0.15;
-          const maxScale = 1.2;
+          const scaleFactor = 0.1;
+          const maxScale = 1.15;
 
           const newScale = Math.min(maxScale, 1 + scaleFactor * scrollPosition / containerHeight);
           setScale(newScale);
@@ -38,14 +38,14 @@ const MainProjects = () => {
       };
     }
   }, [inView]);
-  
+
   return (
   <section className="mt-[300px]">
       <div className="my-[144px] flex justify-between">
         <h2 className="text-left text-5xl text-mulish text-main font-bold">Latest projects</h2>
       </div>
       <div ref={containerRef}>
-      <div className={`grid-container`} ref={ref}>
+      <div className={`grid-container ${inView ? 'anime' : ''} `} ref={ref} >
           {
             mainProjects.map((p) => 
               <ProjectCard project={p} scale={`scale(${scale})`}/>

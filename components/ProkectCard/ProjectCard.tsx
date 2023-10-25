@@ -3,6 +3,7 @@ import Image from "next/image";
 import ButtonLink from "../ButtonLink";
 
 export const ProjectCard = ({ project, scale }: { project: Project; scale?: string }) => {
+
   return (
     <div key={project.id} className={`${project?.type || ''} hover-project-block relative flex-wrap inline-block overflow-hidden`}>
       <Image
@@ -13,7 +14,7 @@ export const ProjectCard = ({ project, scale }: { project: Project; scale?: stri
         width={project?.formatOfImg?.width }
         height={project?.formatOfImg?.height}
       />
-      <div className={`hover-project-text pl-[50px] pt-[50px] w-[${project?.formatOfImg?.width}px] h-[${project?.formatOfImg?.height}px] bg-mainBg  border border-primary`}>
+      <div className={`hover-project-text pl-[50px] pt-[50px] pb-[50px] w-full h-full bg-mainBg  border border-primary`}>
         <h3 className="pt-6 w-[115px] text-3xl text-left text-mulish text-main font-bold">
           {project.name}
         </h3>
