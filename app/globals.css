@@ -96,11 +96,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   height: 100%;
-  opacity: 0;
   transition: all 3s ease-out;
-}
-.anime {
-  opacity: 1;
 }
 
 .item-1 {

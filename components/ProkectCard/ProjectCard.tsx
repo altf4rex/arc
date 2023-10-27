@@ -1,6 +1,7 @@
 import {Project} from "@/types"
 import Image from "next/image";
 import ButtonLink from "../ButtonLink";
+import { motion, useScroll } from "framer-motion"
 
 export const ProjectCard = ({ project, scale }: { project: Project; scale?: string }) => {
 

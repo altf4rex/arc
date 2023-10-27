@@ -11,7 +11,7 @@ const context = useContext(Context);
     onClick={() => context?.current(projectId)}
     >
       <p className={`text-6xl font-bold ${context?.currentIndex === projectId? 'text-primary' : 'text-white'}`}>{`0${index + 1} `}</p>
-      <p className='max-w-[90px] ml-6 mt-2 text-sans text-base text-white text-left'>{projectName}</p>
+      <p className='max-w-[110px] ml-6 mt-2 text-sans text-base text-white text-left'>{projectName}</p>
     </button>
   )
 }
