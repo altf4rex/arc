@@ -7,11 +7,11 @@ const CarouselButton = ({projectId, projectName, index}: {projectId: number, pro
 const context = useContext(Context);
   return (
     <button 
-    className='flex items-center px-12 py-4 hover:bg-primaryHover'
+    className='group flex items-center px-12 py-4'
     onClick={() => context?.current(projectId)}
     >
-      <p className={`text-6xl font-bold ${context?.currentIndex === projectId? 'text-primary' : 'text-white'}`}>{`0${index + 1} `}</p>
-      <p className='max-w-[110px] ml-6 mt-2 text-sans text-base text-white text-left'>{projectName}</p>
+      <p className={`text-6xl font-bold group-hover:text-primaryHover ${context?.currentIndex === projectId? 'text-primary' : 'text-white'}`}>{`0${index + 1} `}</p>
+      <p className={`max-w-[110px] ml-6 mt-2 text-left text-sans text-base group-hover:text-primaryHover ${context?.currentIndex === projectId? 'text-primary' : 'text-white'}`}>{projectName}</p>
     </button>
   )
 }

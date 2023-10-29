@@ -12,7 +12,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.3,
+        delay: i * 0.2,
       },
     }),
     hidden: { 
@@ -20,15 +20,16 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
       opacity: 0 
     },
   };
-
+  
   const context = useContext(Context);
+
   return (
     context!.currentIndex === project.id && (
       <motion.div
         key={project.id}
-        initial={{ opacity: 0, x: 100 }}
+        initial={{ opacity: 0, x: 500}}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeOut", duration: 1 }}
+        transition={{ ease: "easeOut", duration: 0.7 }}
       >
         <Image
           className="relative z-0 brightness-[.65]"
@@ -49,7 +50,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
             <motion.path
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
-              transition={{ ease: "easeOut", duration: 0.5 }}
+              transition={{ ease: "easeOut", duration: 0.7 }}
               d="M158 2L2 2V260.5V519H158"
               stroke="#C47F3F"
               strokeWidth="4"
