@@ -17,11 +17,15 @@
 }
 
 .max-width {
-  @apply max-w-[1920px] mx-auto;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container{
-  padding: 0 60px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-sans{

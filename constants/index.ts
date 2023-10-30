@@ -39,3 +39,34 @@ export const services = [
         text: "Projects for many large domestic and foreign corporations, enProjects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.terprises in many elds such as nance, banking, F&B, education, communication."
     },
 ]
+
+
+export const team = [
+    {
+        img: "/team1.jpg",
+        alt: "team"
+    },
+    {
+        img: "/team2.jpg",
+        alt: "team"
+    },
+    {
+        img: "/team3.jpg",
+        alt: "team"   
+    },
+]
+
+export const skills = [
+    {
+        skill: "YEARS WORKING",
+        count: 20
+    },
+    {
+        skill: "TALANTED MANAGERS",
+        count: 7
+    },
+    {
+        skill: "COMPLITLY PROJECTS",
+        count: 100  
+    },
+]

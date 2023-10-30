@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-mainBg'>
-      <body className='max-width container'>
+      <body className='max-width'>
         <Provider>
           <Header/>
           {children}

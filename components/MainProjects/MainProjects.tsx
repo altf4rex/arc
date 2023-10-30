@@ -39,9 +39,9 @@ const MainProjects = () => {
   }, [isInView]);
 
   return (
-    <section className="mt-[300px]" >
+    <section className="mt-[300px] px-[60px]" >
       <div className="my-[144px] flex justify-between">
-        <h2 className="text-left text-5xl text-mulish text-main font-bold">Latest projects</h2>
+        <h2 className="container text-left text-5xl text-mulish text-main font-bold">Latest projects</h2>
       </div>
       <div
         ref={ref}
@@ -53,7 +53,7 @@ const MainProjects = () => {
         ))
       }
       </div>
-      <div className="mt-[126px] mr-[60px] flex justify-end">
+      <div className="container mt-[126px] mr-[60px] flex justify-end">
         <ButtonLink slug={'/projects'} text={"View all projects"} />
       </div>
     </section>
