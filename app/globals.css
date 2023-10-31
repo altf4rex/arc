@@ -93,6 +93,10 @@
   visibility: visible;
 }
 
+.base-block{
+  width: 450px;
+  height: 450px;
+}
 
 .grid-container  {
   display: grid; 
@@ -140,3 +144,4 @@
    grid-column-end: 3;
    
 }
+

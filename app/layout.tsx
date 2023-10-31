@@ -2,6 +2,7 @@ import Header from '@/components/Header/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import Provider from '@/components/provider'
+import Footer from '@/components/Footer/Footer'
 
 // import { Inter } from 'next/font/google'
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Provider>
           <Header/>
           {children}
+          <Footer/>
         </Provider>
       </body>
     </html>

@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 const MainTeam = () => {
     const headerVariants = {
         visible: (i: number) => ({
-          x: 0,
+          y: 0,
           opacity: 1,
           transition: {
-            delay: (i + 1) * 0.3,
+            delay: (i + 1) * 0.1,
             duration: 0.6,
           },
         }),
         hidden: (i: number) => ({
-          x: -250 * (i + 1),
+          y: 250,
           opacity: 0,
         }),
     }
@@ -34,7 +34,7 @@ const MainTeam = () => {
                 variants={headerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{amount: 0.2, once: true}}
+                viewport={{amount: 0.1, once: true}}
                 custom={i}
             />
             )

@@ -86,3 +86,32 @@ export const mainProjects = [
     }
 ]
     
+
+
+export const news = [
+    {
+        id: 1,
+        name: "Nature-Inspired Architecture",
+        slug: "news/",
+        description: "Explore the harmony of modern architecture and nature.",
+        fullDescription: "In this architectural wonder, we have redefined the relationship between the built environment and the natural world. Surrounded by breathtaking landscapes, our innovative design seamlessly merges indoor and outdoor spaces, creating a harmonious retreat for those seeking tranquility and inspiration.",
+        img: "/news1.jpg",
+    },
+    {
+        id: 2,
+        name: "Wind Farm Revolution",
+        slug: "news/",
+        description: "Discover futuristic wind farms and sustainable energy.",
+        fullDescription: "Our wind farm project is a testament to human ingenuity. The sleek, modern design of wind turbines stands as an iconic symbol of sustainability. Learn how these towering structures capture the wind's energy and convert it into clean, renewable power, bringing us one step closer to a greener, cleaner planet.",
+        img: "/news2.jpg",
+    },
+    {
+        id: 3,
+        name: "Urban Architecture Redefined",
+        slug: "news/",
+        description: "Explore the future of cityscapes with innovative designs.",
+        fullDescription: "Our latest architectural masterpiece is set to reshape city skylines. The impressive tower, topped by a stunning structure reminiscent of a broadcast tower, houses modern living spaces, offices, and recreational areas. Learn how this visionary project is pushing the boundaries of urban architecture and redefining city living.",
+        img: "/news3.jpg",
+    }
+]
+  

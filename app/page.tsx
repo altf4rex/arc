@@ -1,4 +1,5 @@
 import Slider from "@/components/Carousel/Carousel";
+import MainNews from "@/components/MainNews/MainNews";
 import MainProjects from "@/components/MainProjects/MainProjects";
 import MainServices from "@/components/MainServices/MainServices";
 import MainSkills from "@/components/MainSkills/MainSkills";
@@ -12,6 +13,7 @@ export default function Home() {
       <MainServices />
       <MainTeam />
       <MainSkills />
+      <MainNews />
     </main>
   )
 }
