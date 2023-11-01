@@ -15,18 +15,18 @@ export const ProjectCard = ({ project, scale }: { project: Project; scale?: stri
         width={project?.formatOfImg?.width || 428 }
         height={project?.formatOfImg?.height || 428}
       />
-      <Link href={project.slug} className={`hover-project-text block absolute pt-[8%] pl-[8%] w-full h-full bg-mainBg  border border-primary`}>
-        <h3 className="pt-6 text-3xl text-left text-mulish text-main font-bold">
+      <Link href={project.slug} className={`hover-project-text block absolute pt-[6%] pl-[8%] w-full h-full bg-mainBg  border border-primary`}>
+        <h3 className="pt-6 max-w-[250px] text-3xl text-left text-mulish text-main font-bold">
           {project.name}
         </h3>
-        <p className="pt-12 text-base text-sans text-textGray font-normal">
+        <p className="pt-12 max-w-[350px] text-base text-sans text-textGray font-normal">
           {project.description}
         </p>
         <div
         className="main-link  absolute flex bottom-16"
         >
-      <p className="font-bold mr-4 whitespace-nowrap text-sans text-main text-base ">
-        See project
+      <p className="font-semibold mr-4 whitespace-nowrap text-sans text-main text-base ">
+        See more
       </p>
       <svg
         width="13"

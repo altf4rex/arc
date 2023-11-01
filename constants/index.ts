@@ -70,3 +70,16 @@ export const skills = [
         count: 100  
     },
 ]
+
+export const footerLinks = [
+    {
+    array:["About", "Career", "Contact"]
+    },
+    {
+      array:["Help", "Site Map", "Our Location"]
+    },
+    {
+      array:["Privacy Policy", "Term & Conditions"]
+    },
+    
+  ]

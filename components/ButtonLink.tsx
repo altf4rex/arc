@@ -6,7 +6,7 @@ const ButtonLink = ({slug, text}: {slug: string, text: string}) => {
       href={slug}
       className="main-link relative flex"
     >
-      <p className="mr-10 font-bold whitespace-nowrap text-sans text-main text-base ">
+      <p className="mr-10 font-medium whitespace-nowrap text-sans text-main text-base ">
         {text}
       </p>
       <svg

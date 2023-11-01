@@ -23,7 +23,7 @@
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1350px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,6 +34,11 @@
 
 .text-mulish{
   font-family: 'Mulish', sans-serif;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2 solid #929292; 
+  outline: none; 
 }
 
 .logo-line {
@@ -145,3 +150,6 @@
    
 }
 
+.icon-link:hover svg path {
+  fill: #B8734C;
+}
