@@ -39,7 +39,7 @@ const MainProjects = () => {
   }, [isInView]);
 
   return (
-    <section className="mt-[300px] px-[60px]" >
+    <section className="mt-[300px] mx-[60px]" >
       <div className="my-[144px] flex justify-between">
         <h2 className="container text-left text-5xl text-mulish text-main font-bold">Latest projects</h2>
       </div>

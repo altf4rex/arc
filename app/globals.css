@@ -8,13 +8,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  scrollbar-width: auto;
+  scrollbar-color: #434243;
 }
 
-.shadow{
-  background: white;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+*::-webkit-scrollbar {
+  width: 12px;
 }
+
+*::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #434243;
+  border-radius: 18px;
+}
+
 
 .max-width {
   max-width: 1920px;
@@ -37,8 +47,13 @@
 }
 
 input[type="text"]:focus {
-  border-bottom: 2 solid #929292; 
+  border-bottom: 2 solid #B9B9B9; 
   outline: none; 
+  
+}
+
+input::placeholder {
+  color: #B9B9B9;
 }
 
 .logo-line {

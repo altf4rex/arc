@@ -6,7 +6,7 @@ import CarouselMainFrame from "./CarouselMainFrame";
 
 const Carousel = () => {
   return (
-    <div className="flex w-max relative px-[60px]">
+    <div className="flex w-max relative mx-[60px] overflow-hidden">
      {carouselProjects.map((p) => (  
         <CarouselMainFrame project={p} key={p.id} />
       ))}
