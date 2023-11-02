@@ -34,7 +34,7 @@ const MainTeam = () => {
                 variants={headerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{amount: 0.1, once: true}}
+                viewport={{once: true}}
                 custom={i}
             />
             )
