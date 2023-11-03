@@ -83,3 +83,6 @@ export const footerLinks = [
     },
     
   ]
+
+export const filter = ["All", "Interior", "Architecture", "Building", "Exterior"]
+

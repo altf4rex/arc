@@ -85,7 +85,6 @@ export const mainProjects = [
           },
     }
 ]
-    
 
 
 export const news = [
@@ -115,3 +114,134 @@ export const news = [
     }
 ]
   
+
+
+export const project = [
+    {
+        id: 1,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-1",
+        img: "/project1.jpg",
+    },
+    {
+        id: 2,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-2",
+        img: "/project1.jpg",
+    },
+    {
+        id: 3,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
+        img: "/project3.jpg",
+    },
+    {
+        id: 4,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-1",
+        img: "/project1.jpg",
+    },
+    {
+        id: 5,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-2",
+        img: "/project1.jpg",
+    },
+    {
+        id: 6,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
+        img: "/project3.jpg",
+    },
+    {
+        id: 7,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-1",
+        img: "/project1.jpg",
+    },
+    {
+        id: 8,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-2",
+        img: "/project1.jpg",
+    },
+    {
+        id: 9,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
+        img: "/project3.jpg",
+    },
+    {
+        id: 10,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-1",
+        img: "/project1.jpg",
+    },
+    {
+        id: 11,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-2",
+        img: "/project1.jpg",
+    },
+    {
+        id: 12,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
+        img: "/project3.jpg",
+    },
+    {
+        id: 13,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-2",
+        img: "/project1.jpg",
+    },
+    {
+        id: 14,
+        name: "Home In Forest",
+        slug: "projects/home-in-forest",
+        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
+        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
+        type: "item-3",
+        img: "/project3.jpg",
+    },
+]
+    
