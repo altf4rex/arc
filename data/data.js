@@ -118,14 +118,57 @@ export const news = [
 
 export const project = [
     {
-        id: 1,
-        name: "Home In Forest",
-        slug: "projects/home-in-forest",
-        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        type: "item-1",
-        img: "/project1.jpg",
-    },
+    id: 1,
+    name: "Home In Forest",
+    slug: "projects/home-in-forest",
+    description: "Projects for many large domestic and foreign corporations, enterprises in many fields.",
+    headeOfFullDescription: "Embracing the harmony of nature and modern design, 'Home In Forest'",
+    fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'Home In Forest' is not just a residence; it's a work of art that captures the essence of contemporary living. Our services for this project include:",
+    type: "item-1",
+    details: [
+      {
+        header: "CLIENT",
+        text: "Richard Hurt",
+      },
+      {
+        header: "COMPLETION",
+        text: "February 5th, 2017",
+      },
+      {
+        header: "PROJECT TYPE",
+        text: "Villar, Residence",
+      },
+      {
+        header: "DESIGNER",
+        text: "Samuel",
+      }
+    ],
+    img: "/details1.jpg",
+    imgDetails: "/details1.jpg",
+    photos: [
+      { url: "/details1.jpg", width: 886, height: 886, type: "item-details-1" },
+      { url: "/details1.jpg", width: 886, height: 428, type: "item-details-2" },
+      { url: "/details1.jpg", width: 428, height: 428, type: "item-details-3" },
+      { url: "/details1.jpg", width: 428, height: 428, type: "item-details-4" }
+    ],
+    servicesProvided: [
+        {
+          title: "Home Design",
+          description: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
+        },
+        {
+          title: "Planning",
+          description: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
+        },
+        {
+          title: "Strategy",
+          description: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
+        }
+      ]
+      
+      
+      
+  },
     {
         id: 2,
         name: "Home In Forest",
@@ -245,3 +288,40 @@ export const project = [
     },
 ]
     
+
+const prototype = {
+    id: 1,
+    name: "Home In Forest",
+    slug: "projects/home-in-forest",
+    description: "Projects for many large domestic and foreign corporations, enterprises in many fields.",
+    headOfFullDescription: "Embracing the harmony of nature and modern design, 'Home In Forest'",
+    fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'Home In Forest' is not just a residence; it's a work of art that captures the essence of contemporary living.",
+    type: "item-1",
+    img: "/mainProject4.jpg",
+    details: [
+      {
+        header: "CLIENT",
+        text: "Richard Hurt",
+      },
+      {
+        header: "COMPLETION",
+        text: "February 5th, 2017",
+      },
+      {
+        header: "PROJECT TYPE",
+        text: "Villar, Residence",
+      },
+      {
+        header: "DESIGNER",
+        text: "Samuel",
+      }
+    ],
+    photos: [
+      { url: "/mainProject4.jpg", width: 1800, height: 769, type: "item-1" },
+      { url: "/photo1.jpg", width: 886, height: 886, type: "item-2" },
+      { url: "/photo2.jpg", width: 886, height: 428, type: "item-3" },
+      { url: "/photo3.jpg", width: 428, height: 428, type: "item-4" },
+      { url: "/photo4.jpg", width: 428, height: 428, type: "item-5" }
+    ]
+  };
+  
