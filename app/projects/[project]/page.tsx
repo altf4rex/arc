@@ -7,7 +7,7 @@ const filteredProject = project.slice(0, 1)[0];
 export default function Page({params}:{params: { project: string }}){
 
 return (
-    <main className="mt-[200px]">
+    <main className="my-[150px]">
         <h2 className="container text-[55px] text-left text-mulish text-main font-bold">{filteredProject.name}</h2>
         <div className="container flex justify-between mt-[100px]">
             {
@@ -26,7 +26,7 @@ return (
             width={1800}
             height={768}
         />
-        <p className="max-w-[780px] mx-auto mt-[150px] pt-8 text-base text-sans text-textGray font-normal">
+        <p className="container mt-[150px] pt-8 text-2xl leading-10 text-sans text-textGray font-normal">
             <span className="text-white font-medium">{filteredProject.headeOfFullDescription} </span>
             {filteredProject.fullDescription}
         </p>
@@ -44,7 +44,7 @@ return (
                 )
             }
         </div>
-        <div className="container mt-[200px]">
+        <div className="container mt-[150px]">
             <h3 className="text-3xl text-left text-mulish text-main font-bold">Services provided</h3>
             <div className="mt-[100px] flex justify-between">
             {
