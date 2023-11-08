@@ -43,17 +43,54 @@ export const services = [
 
 export const team = [
     {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
         img: "/team1.jpg",
         alt: "team"
     },
     {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
         img: "/team2.jpg",
         alt: "team"
     },
     {
-        img: "/team3.jpg",
-        alt: "team"   
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team1.jpg",
+        alt: "team"
     },
+    {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team2.jpg",
+        alt: "team"
+    },
+    {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team1.jpg",
+        alt: "team"
+    },
+    {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team2.jpg",
+        alt: "team"
+    },
+    {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team1.jpg",
+        alt: "team"
+    },
+    {
+        name: "Jack WIlshere",
+        post: "CEO / Founder",
+        img: "/team1.jpg",
+        alt: "team"
+    },
+    
 ]
 
 export const skills = [

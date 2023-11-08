@@ -46,6 +46,26 @@
   font-family: 'Mulish', sans-serif;
 }
 
+.h1{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.h2{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.h4{
+
+}
+
+.text{
+
+}
+
 input[type="text"]:focus {
   border-bottom: 2 solid #B9B9B9; 
   outline: none; 

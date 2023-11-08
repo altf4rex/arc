@@ -1,12 +1,16 @@
 import Image from "next/image";
 import { about } from "@/constants";
+import MainTeam from "@/components/MainTeam/MainTeam";
+import {team} from "@/constants"
+
 export default function Page() {
+
   return (
     <main className="my-[150px]">
-      <h2 className="container text-[72px] text-left text-mulish text-main font-bold">
+      <h1 className="container h1 text-left text-mulish text-main font-bold">
         Strategy-led <br />
         <span className="text-primary">design</span> in every detail
-      </h2>
+      </h1>
       <Image
         className="mx-auto w-[1800px] h-[769px] mt-[100px] object-cover"
         src={"/aboutTeam1.jpg"}
@@ -15,9 +19,9 @@ export default function Page() {
         height={769}
       />
       <div className="container mt-[200px]">
-        <h3 className="text-6xl text-left text-mulish text-main font-bold">
-          A few words About us
-        </h3>
+        <h2 className="h2 text-left text-mulish text-main font-bold">
+          A few words <span className="text-primary">About us</span> 
+        </h2>
         <div className="">
           <div key={about[0].id} className="flex mt-20">
             <Image
@@ -28,8 +32,8 @@ export default function Page() {
               height={960}
             />
             <div className="ml-12">
-            <h4 className="text-4xl leading-[48px] font-semibold text-sans text-white">{about[0].header}</h4>
-            <p className="text-4xl leading-[48px] font-semibold text-sans text-textGray">
+            <h3 className="h3 font-semibold text-sans text-white">{about[0].header}</h3>
+            <p className="text-3xl leading-[48px] font-semibold text-sans text-textGray">
               <br />
               {about[0].text.split("\n").map((text, index) => (
                 <span key={index}>
@@ -42,8 +46,8 @@ export default function Page() {
           </div>
           <div key={about[1].id} className="flex mt-[150px]">
             <div className="">
-            <h4 className="text-4xl leading-[48px] font-semibold text-sans text-white">{about[1].header}</h4>
-            <p className="mt-12 mr-12 text-4xl leading-[48px] font-semibold text-sans text-textGray">
+            <h3 className="h3 font-semibold text-sans text-white">{about[1].header}</h3>
+            <p className="mt-12 mr-12 text-3xl leading-[48px] font-medium text-sans text-textGray">
               {about[1].text.split("<br><br>").map((text, index) => (
                 <span key={index}>
                   {text}
@@ -62,6 +66,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <MainTeam team={team} header={"Our team"}/>
     </main>
   );
 }
