@@ -9,7 +9,7 @@ export const ProjectCard = ({ project, scale }: { project: Project; scale?: stri
     <div key={project.id} className={`${project?.type || ''} w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px] hover-project-block relative flex flex-wrap  overflow-hidden`}>
       <Image
         style={{ transform: scale || 'scale(1)' }}
-        className={`hover-project-img top-0`}
+        className={`hover-project-img top-0 w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px]] object-cover`}
         src={project?.formatOfImg?.src || project.img}
         alt="project"
         width={project?.formatOfImg?.width || 428 }
@@ -19,7 +19,7 @@ export const ProjectCard = ({ project, scale }: { project: Project; scale?: stri
         <h3 className="pt-6 max-w-[300px] text-3xl text-left text-mulish text-main font-bold">
           {project.name}
         </h3>
-        <p className="pt-12 max-w-[350px] text-base text-sans text-textGray font-normal">
+        <p className="pt-12 max-w-[400px] text-base text-sans text-textGray font-normal">
           {project.description}
         </p>
         <div

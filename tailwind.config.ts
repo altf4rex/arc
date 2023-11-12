@@ -15,7 +15,8 @@ const config: Config = {
         secondary: "#000000",
         bgImg: "#F9F9F9",
         mainBg: "#272727",
-        textGray: "#B9B9B9"
+        textGray: "#c9c9c9"
+        // textGray: "#B9B9B9"
       }
     },
   },

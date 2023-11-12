@@ -9,7 +9,7 @@ const MainTeam = ({team, header}) => {
           y: 0,
           opacity: 1,
           transition: {
-            delay: (i + 1) * 0.1,
+            delay: i < 3 ? (i + 1) * 0.1 : 0,
             duration: 0.6,
           },
         }),
@@ -24,33 +24,44 @@ const MainTeam = ({team, header}) => {
   return (
     
     <section className="container mt-[210px]">
-        <h2 className="text-5xl text-left font-bold text-mulish text-main">{header}</h2>
-        <div className="mt-[150px] grid grid-cols-3">
+<div className="overflow-hidden pb-2">
+<motion.div
+      className="h2 text-left font-bold text-mulish text-main"
+      initial={{ opacity: 0, translateY: "100%" }}
+      whileInView={{ opacity: 1, translateY: 0  }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 1 }}
+    >
+      
+      {header}
+    </motion.div>
+</div>
+        <div className="grid grid-cols-3 mt-[142px] gap-x-44 gap-y-20">
         {
             team.map((t, i) => 
-            <motion.div 
+            <div 
               key={i}
               className="group relative w-max h-max"
-              whileHover={{ scale: 1.2, opacity: 0.2}}
-              variants={headerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{once: true}}
-              custom={i}
+              
             >
-              <img 
+              <motion.img 
                 className="w-[351px] h-[542px]"
                 src={t.img}
                 alt={t.alt}
                 width={351}
                 height={542}
-                
+                whileHover={{ scale: 1.2, opacity: 0.2}}
+                variants={headerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true}}
+                custom={i}
               />
-              <div className="hidden absolute bottom-[1%] left-[4%] group-hover:inline-block">
+              <div className="hidden absolute bottom-[1%] left-[4%] group-hover:inline-block pointer-events-none">
                 <p className="pt-6 max-w-[300px] text-3xl text-left text-mulish text-main font-bold">{t.name}</p>
                 <p className="pt-12 max-w-[350px] text-base text-sans text-textGray font-normal">{t.post}</p>
               </div>
-            </motion.div>
+            </div>
           )
         }
         </div>

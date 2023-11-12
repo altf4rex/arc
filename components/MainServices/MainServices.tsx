@@ -9,8 +9,8 @@ const MainServices = () => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.3,
-        duration: 0.6,
+        delay: i * 0.4,
+        duration: 0.8,
       },
     }),
     hidden: {
@@ -22,9 +22,17 @@ const MainServices = () => {
   return (
     <section className="flex items-center flex-col mt-[210px]">
       <div className="container">
-        <h2 className="text-5xl text-left font-bold text-mulish text-main">
-          Services
-        </h2>
+      <div className="overflow-hidden pb-2">
+      <motion.div
+      className="h2 text-left font-bold text-mulish text-main"
+      initial={{ opacity: 0, translateY: "100%" }}
+      whileInView={{ opacity: 1, translateY: 0  }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 1 }}
+    >
+      Services
+    </motion.div>
+   </div>
         <div className="flex mt-[150px]">
           {services.map((s, i) => (
             <motion.div
@@ -33,23 +41,37 @@ const MainServices = () => {
               variants={headerVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{amount: 0.2, once: true}}
+              viewport={{amount: 0.8, once: true}}
               custom={i}
               
             >
-              <Image
+              <motion.img
                 className="w-[70px] h-[100px]"
+                initial={{opacity: 0, y: -50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 1}}
                 src={s.img}
                 alt={s.header}
                 width={60}
                 height={40}
               />
-              <h3 className="mt-8 text-2xl font-bold text-mulish text-main">
+              <motion.div 
+              className="mt-8 text-2xl font-bold text-mulish text-main"
+              initial={{opacity: 0, y: -50}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 1, delay: 0.5}}
+              >
+
                 {s.header}
-              </h3>
-              <p className="mt-12 text-base font-normal text-sans text-textGray">
+              </motion.div>
+              <motion.div 
+              className="mt-12 text-base font-normal text-sans text-textGray"
+              initial={{opacity: 0, y: -50}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 1, delay: 0.8}}
+              >
                 {s.text}
-              </p>
+              </motion.div>
             </motion.div>
           ))}
         </div>

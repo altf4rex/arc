@@ -12,7 +12,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
       y: 0,
       opacity: 1,
       transition: {
-        delay: i * 0.2,
+        delay: i * 0.3,
       },
     }),
     hidden: { 
@@ -29,7 +29,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
         key={project.id}
         initial={{ opacity: 0, x: 500}}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeOut", duration: 0.7 }}
+        transition={{ ease: [.08,.89,.92,1.02], duration: 1 }}
       >
         <Image
           className="relative z-0 brightness-[.65]"
@@ -50,7 +50,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
             <motion.path
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
-              transition={{ ease: "easeOut", duration: 0.7 }}
+              transition={{ ease: "easeOut", duration: 1.2}}
               d="M158 2L2 2V260.5V519H158"
               stroke="#C47F3F"
               strokeWidth="4"
@@ -72,7 +72,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
                   key={w}
                   className="even:text-primary"
                   variants={headerVariants}
-                  custom={i}
+                  custom={i + 1}
                 >
                   {w}
                 </motion.p>

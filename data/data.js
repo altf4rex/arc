@@ -26,64 +26,64 @@ export const carouselProjects = [
 ]
     
 export const mainProjects = [
-    {
-        id: 1,
-        name: "Home In Forest",
-        slug: "projects/home-in-forest",
-        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        type: "item-1",
-        img: "/project2.jpg",
-        formatOfImg: {
-            src: "/project2.jpg",
+  {
+      id: 1,
+      name: "Modern Oasis",
+      slug: "projects/modern-oasis",
+      description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern living.",
+      fullDescription: "Dedicated to crafting cutting-edge designs that not only elevate your content but also prioritize sustainability. Our theme is meticulously tailored to meet the demands of a dynamic environment, be it a bustling agency or a compact studio. Drawing from years of collaboration with countless creatives, we proudly present a theme that seamlessly integrates into your toolkit, offering a glimpse into the future of design where form meets function and sustainability is paramount.",
+      type: "item-1",
+      img: "/project2.jpg",
+      formatOfImg: {
+          src: "/project2.jpg",
+          width: 580,
+          height: 1190,
+      },
+  },
+  {
+      id: 2,
+      name: "Contemporary Residence",
+      slug: "projects/contemporary-residence",
+      description: "Undertaking diverse and transformative projects for major national and international entities, creating spaces that redefine the essence of modern living by seamlessly blending aesthetics, functionality, and technological innovation.",
+      fullDescription: "Designed with a singular focus on enhancing and illuminating your content. This theme is a thoughtful response to the daily requirements of a creative space, be it a dynamic agency or a compact studio. Backed by extensive collaboration with numerous creatives over the years, we present a theme that seamlessly integrates into your creative arsenal, offering a harmonious balance between cutting-edge design and practical functionality.",
+      type: "item-2",
+      img: "/project1.jpg",
+      formatOfImg: 
+          {
+            src: "/project1.jpg",
             width: 580,
-            height: 1190,
-        },
-    },
-    {
-        id: 2,
-        name: "Home In Forest",
-        slug: "projects/home-in-forest",
-        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        type: "item-2",
-        img: "/project1.jpg",
-        formatOfImg: 
-            {
-              src: "/project1.jpg",
-              width: 580,
-              height: 580,
-            },
-    },
-    {
-        id: 3,
-        name: "Home In Forest",
-        slug: "projects/home-in-forest",
-        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        type: "item-3",
-        img: "/mainProject.jpg",
-        formatOfImg: 
-            {
-              src: "/project3.jpg",
-              width: 580,
-              height: 580,
-            },
-    },
-    {
-        id: 4,
-        name: "Home In Forest",
-        slug: "projects/home-in-forest",
-        description: "Projects for many large domestic and foreign corporations, enterprises in many elds such",
-        fullDescription: "Totally focused on tools to enhance and help your content shine. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. We have created this theme thinking only in options helpfully for the daily needs in a creative environment like an agency, a small studio. As a result working with hundred of creatives all these past years, we are now delivering a theme that will be part of your toolset.",
-        type: "item-4",
-        img: "/project4.jpg", 
-        formatOfImg: {
-            src: "/project4.jpg",
-            width: 1190,
             height: 580,
           },
-    }
+  },
+  {
+      id: 3,
+      name: "Sustainable Haven",
+      slug: "projects/sustainable-haven",
+      description: "Pioneering transformative and sustainable projects for prominent domestic and international enterprises, specializing in eco-friendly and sustainable living spaces that prioritize the well-being of both inhabitants and the planet.",
+      fullDescription: "Focused on tools that enrich and support the brilliance of your content. Tailored to meet the daily needs of a creative environment, whether it's a bustling agency or a compact studio. Drawing from extensive collaboration with numerous creatives, we present a theme that seamlessly becomes an integral part of your creative toolkit, embodying a commitment to sustainable design that goes beyond aesthetics to create spaces that enhance the quality of life for generations to come.",
+      type: "item-3",
+      img: "/mainProject.jpg",
+      formatOfImg: 
+          {
+            src: "/project3.jpg",
+            width: 580,
+            height: 580,
+          },
+  },
+  {
+      id: 4,
+      name: "Urban Retreat",
+      slug: "projects/urban-retreat",
+      description: "Handling diverse projects for major domestic and international corporations, creating urban retreats that balance modern aesthetics with functionality, offering a respite from the urban hustle while embodying a contemporary lifestyle.",
+      fullDescription: "Completely devoted to tools that enhance and elevate your content. Crafted with a focus on the daily needs of a creative environment, whether it's a bustling agency or a compact studio. Backed by years of collaboration with countless creatives, we now present a theme that seamlessly integrates into your creative toolkit, inviting you to experience urban living in a retreat that marries modern aesthetics with practical functionality.",
+      type: "item-4",
+      img: "/project4.jpg", 
+      formatOfImg: {
+          src: "/project4.jpg",
+          width: 1190,
+          height: 580,
+        },
+  }
 ]
 
 
@@ -121,7 +121,7 @@ export const project = [
     id: 1,
     name: "Home In Forest",
     slug: "projects/home-in-forest",
-    description: "Projects for many large domestic and foreign corporations, enterprises in many fields.",
+    description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern living.",
     headeOfFullDescription: "Embracing the harmony of nature and modern design, 'Home In Forest'",
     fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'Home In Forest' is not just a residence; it's a work of art that captures the essence of contemporary living. Our services for this project include:",
     type: "item-1",
@@ -143,13 +143,12 @@ export const project = [
         text: "Samuel",
       }
     ],
-    img: "/details1.jpg",
-    imgDetails: "/details1.jpg",
+    img: "/detailsProject1.jpg",
     photos: [
-      { url: "/details1.jpg", width: 886, height: 886, type: "item-details-1" },
-      { url: "/details1.jpg", width: 886, height: 428, type: "item-details-2" },
-      { url: "/details1.jpg", width: 428, height: 428, type: "item-details-3" },
-      { url: "/details1.jpg", width: 428, height: 428, type: "item-details-4" }
+      { url: "/detailsProject2.jpg", width: 886, height: 886, type: "item-details-1" },
+      { url: "/detailsProject3.jpg", width: 886, height: 428, type: "item-details-2" },
+      { url: "/detailsProject4.jpg", width: 428, height: 428, type: "item-details-3" },
+      { url: "/detailsProject5.jpg", width: 428, height: 428, type: "item-details-4" }
     ],
     servicesProvided: [
         {

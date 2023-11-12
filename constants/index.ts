@@ -157,7 +157,7 @@ export const about = [
         id: 2,
         img: "/about3.jpg",
         header: "Crafting Your Architectural Dreams",
-        text: "We're defined by our dedication to client satisfaction, attention to detail, and a pursuit of artistic perfection. Join us in making your architectural dreams a reality. Contact Larson today, and let's create magnificent designs together.",
+        text: "Embark on a journey to transform your architectural aspirations into reality with us. Our commitment to client satisfaction, meticulous attention to detail, and relentless pursuit of artistic perfection define our ethos. Join us in the pursuit of crafting exceptional designs. ",
     }
 ]
 
