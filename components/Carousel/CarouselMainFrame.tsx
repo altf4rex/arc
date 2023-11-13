@@ -29,7 +29,7 @@ const CarouselMainFrame = ({ project }: { project: Project }) => {
         key={project.id}
         initial={{ opacity: 0, x: 500}}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ ease: [.08,.89,.92,1.02], duration: 1 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
       >
         <Image
           className="relative z-0 brightness-[.65]"

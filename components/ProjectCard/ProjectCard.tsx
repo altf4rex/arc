@@ -5,14 +5,15 @@ import Link from "next/link";
 import React from "react";
 
 export const ProjectCard = ({ project, scale }: { project: Project; scale?: string }) => {
+  
   return (
     <div key={project.id} className={`${project?.type || ''} w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px] hover-project-block relative flex flex-wrap  overflow-hidden`}>
       <Image
         style={{ transform: scale || 'scale(1)' }}
-        className={`hover-project-img top-0 w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px]] object-cover`}
+        className={`hover-project-img top-0 w-fit h-fit object-cover`}
         src={project?.formatOfImg?.src || project.img}
         alt="project"
-        width={project?.formatOfImg?.width || 428 }
+        width={project?.formatOfImg?.width || 428}
         height={project?.formatOfImg?.height || 428}
       />
       <Link href={project.slug} className={`hover-project-text block absolute pt-[6%] pl-[8%] w-full h-full bg-mainBg  border border-primary`}>

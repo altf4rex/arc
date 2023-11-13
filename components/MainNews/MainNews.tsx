@@ -48,7 +48,7 @@ const MainNews = () => {
             variants={newsVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{amount: 0.3, once: true }}
+            viewport={{amount: 0.45, once: true }}
             
             custom={i + 1}
             >

@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 
 const MainSkills = () => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
 
   const [counters, setCounters] = useState(skills.map(() => 0));
 
@@ -16,7 +16,7 @@ const MainSkills = () => {
           const newCounters = prevCounters.map((count, index) => {
             const difference = skills[index].count - count;
             const step = Math.max(1, Math.floor(difference / 2));
-
+            
             if (difference > 0) {
               return count + step;
             }
@@ -24,7 +24,7 @@ const MainSkills = () => {
           });
           return newCounters;
         });
-      }, 100);
+      }, 150);
 
       return () => {
         clearInterval(timer);

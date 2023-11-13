@@ -24,7 +24,7 @@ export default function Page() {
     </motion.div>
 </div>
       <motion.img
-        className="mx-auto w-[1800px] h-[769px] mt-[100px] object-cover"
+        className="w-[1800px] h-[900px] mt-[100px] mx-[60px] object-cover"
         src={"/aboutTeam1.jpg"}
         alt="team"
         width={1800}

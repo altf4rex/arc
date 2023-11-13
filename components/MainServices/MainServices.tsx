@@ -59,16 +59,16 @@ const MainServices = () => {
               className="mt-8 text-2xl font-bold text-mulish text-main"
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.5}}
+              transition={{duration: 1, delay: (0.3 * (i + 1))}}
               >
 
                 {s.header}
               </motion.div>
               <motion.div 
               className="mt-12 text-base font-normal text-sans text-textGray"
-              initial={{opacity: 0, y: -50}}
+              initial={{opacity: 0, y: -60}}
               animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: 0.8}}
+              transition={{duration: 1, delay: (0.4 * (i + 1))}}
               >
                 {s.text}
               </motion.div>

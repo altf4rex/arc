@@ -21,7 +21,7 @@ return (
         </div> 
         <Image 
         className="w-[1800px] h-[900px] mt-[100px] mx-[60px] object-cover bg-textGray"
-            src={filteredProject.imgDetails}
+            src={filteredProject.img}
             alt="project"
             width={1920}
             height={1200}
