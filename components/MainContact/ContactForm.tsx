@@ -9,7 +9,7 @@ export const ContactForm = ({place}: {place: string}) => {
         mb-2
         pb-3
         pl-3
-        w-[300px]
+        w-full
         border-b-2 
         text-mulish
         border-textGray 
