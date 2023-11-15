@@ -124,7 +124,6 @@ export const project = [
     description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern living.",
     headeOfFullDescription: "Embracing the harmony of nature and modern design, 'Home In Forest'",
     fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'Home In Forest' is not just a residence; it's a work of art that captures the essence of contemporary living. Our services for this project include:",
-    type: "item-1",
     details: [
       {
         header: "CLIENT",
@@ -323,4 +322,64 @@ const prototype = {
       { url: "/photo4.jpg", width: 428, height: 428, type: "item-5" }
     ]
   };
+  
+
+
+  export const architectureNews = [
+    {
+      id: 1,
+      img: "/NewsPage.jpg",
+      title: "Exploring the Timeless Beauty of Historic Architecture",
+      slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
+      description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
+      fullDescription: `
+        <p>Step back in time as we delve into the captivating story behind a historic architectural gem. Our exploration takes us through the intricate details, unique design elements, and the enduring legacy of this aging masterpiece.</p>
+        <p>Constructed decades ago, this building stands as a testament to the architectural prowess of its time. From the ornate facades to the timeless craftsmanship, each corner tells a tale of a bygone era.</p>
+        <p>Join us on this virtual tour, where we'll uncover the secrets embedded in the walls, the fascinating tales of its creators, and the challenges faced during its construction. The journey promises to be a visual and intellectual treat for architecture enthusiasts.</p>
+        <p>As we navigate through the corridors of history, we'll reflect on the conservation efforts and the importance of preserving these architectural treasures for future generations. Discover how modernity and heritage coexist in harmony, creating a unique blend that defines the character of our cities.</p>
+        <p>Embark on this immersive experience and witness the enduring charm of an old building that continues to stand tall, narrating the story of a bygone era.</p>
+      `,
+    },
+    {
+      id: 2,
+      img: "/NewsPage.jpg",
+      title: "Exploring the Timeless Beauty of Historic Architecture",
+      description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
+      fullDescription: `
+        <p>Step back in time as we delve into the captivating story behind a historic architectural gem. Our exploration takes us through the intricate details, unique design elements, and the enduring legacy of this aging masterpiece.</p>
+        <p>Constructed decades ago, this building stands as a testament to the architectural prowess of its time. From the ornate facades to the timeless craftsmanship, each corner tells a tale of a bygone era.</p>
+        <p>Join us on this virtual tour, where we'll uncover the secrets embedded in the walls, the fascinating tales of its creators, and the challenges faced during its construction. The journey promises to be a visual and intellectual treat for architecture enthusiasts.</p>
+        <p>As we navigate through the corridors of history, we'll reflect on the conservation efforts and the importance of preserving these architectural treasures for future generations. Discover how modernity and heritage coexist in harmony, creating a unique blend that defines the character of our cities.</p>
+        <p>Embark on this immersive experience and witness the enduring charm of an old building that continues to stand tall, narrating the story of a bygone era.</p>
+      `,
+    },
+    {
+      id: 3,
+      img: "/NewsPage.jpg",
+      title: "Exploring the Timeless Beauty of Historic Architecture",
+      description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
+      fullDescription: `
+        <p>Step back in time as we delve into the captivating story behind a historic architectural gem. Our exploration takes us through the intricate details, unique design elements, and the enduring legacy of this aging masterpiece.</p>
+        <p>Constructed decades ago, this building stands as a testament to the architectural prowess of its time. From the ornate facades to the timeless craftsmanship, each corner tells a tale of a bygone era.</p>
+        <p>Join us on this virtual tour, where we'll uncover the secrets embedded in the walls, the fascinating tales of its creators, and the challenges faced during its construction. The journey promises to be a visual and intellectual treat for architecture enthusiasts.</p>
+        <p>As we navigate through the corridors of history, we'll reflect on the conservation efforts and the importance of preserving these architectural treasures for future generations. Discover how modernity and heritage coexist in harmony, creating a unique blend that defines the character of our cities.</p>
+        <p>Embark on this immersive experience and witness the enduring charm of an old building that continues to stand tall, narrating the story of a bygone era.</p>
+      `,
+    },
+    {
+      id: 4,
+      img: "/NewsPage.jpg",
+      title: "Exploring the Timeless Beauty of Historic Architecture",
+      description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
+      fullDescription: `
+        <p>Step back in time as we delve into the captivating story behind a historic architectural gem. Our exploration takes us through the intricate details, unique design elements, and the enduring legacy of this aging masterpiece.</p>
+        <p>Constructed decades ago, this building stands as a testament to the architectural prowess of its time. From the ornate facades to the timeless craftsmanship, each corner tells a tale of a bygone era.</p>
+        <p>Join us on this virtual tour, where we'll uncover the secrets embedded in the walls, the fascinating tales of its creators, and the challenges faced during its construction. The journey promises to be a visual and intellectual treat for architecture enthusiasts.</p>
+        <p>As we navigate through the corridors of history, we'll reflect on the conservation efforts and the importance of preserving these architectural treasures for future generations. Discover how modernity and heritage coexist in harmony, creating a unique blend that defines the character of our cities.</p>
+        <p>Embark on this immersive experience and witness the enduring charm of an old building that continues to stand tall, narrating the story of a bygone era.</p>
+      `,
+    },
+  ];
+  
+
   

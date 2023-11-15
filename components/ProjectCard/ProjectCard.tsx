@@ -7,10 +7,10 @@ import React from "react";
 export const ProjectCard = ({ project, scale }: { project: Project; scale?: string }) => {
   
   return (
-    <div key={project.id} className={`${project?.type || ''} w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px] hover-project-block relative flex flex-wrap  overflow-hidden`}>
+    <div key={project.id} className={`${project?.type || 'default-block'} w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px] hover-project-block relative flex flex-wrap  overflow-hidden`}>
       <Image
         style={{ transform: scale || 'scale(1)' }}
-        className={`hover-project-img top-0 w-fit h-fit object-cover`}
+        className={`hover-project-img top-0 object-none`}
         src={project?.formatOfImg?.src || project.img}
         alt="project"
         width={project?.formatOfImg?.width || 428}
@@ -26,7 +26,7 @@ export const ProjectCard = ({ project, scale }: { project: Project; scale?: stri
         <div
         className="main-link  absolute flex bottom-16"
         >
-      <p className="font-semibold mr-4 whitespace-nowrap text-sans text-main text-base ">
+      <p className="font-semibold mr-4 whitespace-nowrap text-sans text-main text-base">
         See more
       </p>
       <svg

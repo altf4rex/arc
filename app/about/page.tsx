@@ -30,8 +30,8 @@ export default function Page() {
         width={1800}
         height={769}
         initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1, y: 0  }}
-      transition={{ ease: customEase, duration: 1 }}
+        animate={{ opacity: 1, y: 0  }}
+        transition={{ ease: customEase, duration: 1 }}
       />
       <div className="container mt-[200px]">
       <div className="overflow-hidden pb-2 container">
