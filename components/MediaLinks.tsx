@@ -15,12 +15,11 @@ const MediaLinks = () => {
             />
           </svg>
         </Link>
-        <Link href="/" className="icon-link">
+        <Link href="/" className="icon-link mx-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
             viewBox="0 0 512 512"
-            className="mx-10"
           >
             <path
               fill="#ffffff"

@@ -328,13 +328,21 @@ const prototype = {
   export const architectureNews = [
     {
       id: 1,
-      img: "/NewsImage.jpg",
+      img: "/NewsImage1.jpg",
       title: "Exploring the Timeless Beauty of Historic Architecture",
       slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
       description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
+      fullArticleTitle1: "Unveiling the Historical Narrative: A Journey Through Time",
       fullArticle1: "Step back in time as we delve into the captivating story behind a historic architectural gem. Our exploration takes us through the intricate details, unique design elements, and the enduring legacy of this aging masterpiece. Discover the architectural marvels that defined an era, from the exquisite carvings to the carefully preserved murals that whisper tales of the past. Learn about the visionaries who conceptualized this structure, their inspirations, and the societal impact this architectural wonder had during its prime.",
+      fullArticleTitle4: "Eternal Elegance: Tracing the Architectural Legacy",
+      fullArticle4: "Embark on a mesmerizing journey into the timeless elegance of architectural mastery. This exploration unveils the intricate details that have withstood the test of time, showcasing a masterpiece that continues to enchant. Delve into the craftsmanship that echoes through the ages, from the majestic facades to the hidden gems within. Uncover the narratives woven into the very fabric of the structure, as we navigate through a symphony of artistry and history. Join us in celebrating the enduring allure of this architectural marvel, a testament to the everlasting elegance that defines an era.",
+      newsImage3: "/newsImage3.jpg",
+      fullArticleTitle2: "Architectural Time Capsule: Decoding the Craftsmanship of a Bygone Era",
       fullArticle2: "Constructed decades ago, this building stands as a testament to the architectural prowess of its time. From the ornate facades to the timeless craftsmanship, each corner tells a tale of a bygone era. Explore the architectural evolution of this landmark, from its initial blueprints to the challenges faced by the visionaries who brought it to life. Unearth the architectural innovations that set this building apart and made it a symbol of artistic expression. Immerse yourself in the stories of the artisans who meticulously crafted each element, and gain insight into the cultural significance that this historical monument holds for the community.",
+      newsImage4: "/newsImage4.jpg",
+      fullArticleTitle3: "Preserving the Past: Navigating the Secrets and Challenges of Historic Architecture",
       fullArticle3: "Join us on this virtual tour, where we'll uncover the secrets embedded in the walls, the fascinating tales of its creators, and the challenges faced during its construction. The journey promises to be a visual and intellectual treat for architecture enthusiasts. As we navigate through the corridors of history, we'll reflect on the conservation efforts and the importance of preserving these architectural treasures for future generations. Discover how modernity and heritage coexist in harmony, creating a unique blend that defines the character of our cities. Embark on this immersive experience and witness the enduring charm of an old building that continues to stand tall, narrating the story of a bygone era.",
+      newsImage5: "/newsImage5.jpg",
     },
     {
       id: 2,

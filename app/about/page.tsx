@@ -1,9 +1,10 @@
-'use client'
+
 import Image from "next/image";
 import { about } from "@/constants";
 import MainTeam from "@/components/MainTeam/MainTeam";
 import {team} from "@/constants"
-import { motion } from "framer-motion";
+import MotionImage from "@/components/MotionImage";
+import MotionHeader from "@/components/MotionHeader";
 
 export default function Page() {
 
@@ -12,38 +13,17 @@ export default function Page() {
   return (
     <main className="my-[150px]">
       <div className="overflow-hidden pb-2 container">
-<motion.div
-      className="h1 text-left text-mulish text-main font-bold"
-      initial={{ opacity: 0, translateY: "100%" }}
-      animate={{ opacity: 1, translateY: 0  }}
-      transition={{ duration: 1 }}
-    >
-      
-      Strategy-led <br />
-        <span className="text-primary">design</span> in every detail
-    </motion.div>
+      <MotionHeader>
+          <p className="h1 max-w-[1200px] text-left text-mulish text-main font-bold">Strategy-led <br />
+        <span className="text-primary">design</span> in every detail</p>
+      </MotionHeader> 
 </div>
-      <motion.img
-        className="w-[1800px] h-[900px] mt-[100px] mx-[60px] object-cover"
-        src={"/aboutTeam1.jpg"}
-        alt="team"
-        width={1800}
-        height={769}
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0  }}
-        transition={{ ease: customEase, duration: 1 }}
-      />
+    <MotionImage img={"/aboutTeam1.jpg"} width={1800} height={769}/>
       <div className="container mt-[200px]">
       <div className="overflow-hidden pb-2 container">
-<motion.div
-      className="h2 text-left font-bold text-mulish text-main"
-      initial={{ opacity: 0, translateY: "100%" }}
-      whileInView={{ opacity: 1, translateY: 0  }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 1 }}
-    >    
-      A few words <span className="text-primary">About us</span> 
-    </motion.div>
+      <MotionHeader>
+          <p className="h2 text-left font-bold text-mulish text-main">A few words <span className="text-primary">About us</span></p>
+      </MotionHeader>
 </div>
         
         <div className="">
