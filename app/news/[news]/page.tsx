@@ -2,15 +2,16 @@
 import Image from "next/image";
 import { architectureNews } from "@/data/data";
 import { motion } from "framer-motion";
+import MotionImage from "@/components/MotionImage";
 
 export default function Page({ params }: { params: { news: string } }) {
   let news = architectureNews.filter((a) => a.slug === `/news/${params.news}`);
-  console.log(news);
+  
   return (
-    <main className="container my-[150px]">
-      <div className="overflow-hidden pb-2 container">
+    <main className="my-[150px]">
+      <div className="container overflow-hidden pb-2">
         <motion.div
-          className="h1 text-left text-mulish text-main font-bold"
+          className=" h1 text-left text-mulish text-main font-bold"
           initial={{ opacity: 0, translateY: "100%" }}
           animate={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1 }}
@@ -19,16 +20,8 @@ export default function Page({ params }: { params: { news: string } }) {
           <span className="text-primary">design</span> in every detail
         </motion.div>
       </div>
-      <motion.img
-        className="w-[1800px] h-[900px] mt-[100px] mx-[60px] object-cover"
-        src={"/aboutTeam1.jpg"}
-        alt="team"
-        width={1800}
-        height={769}
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: [0.08, 0.89, 0.92, 1.02], duration: 1 }}
-      />
+      
+      <MotionImage img={news[0].img} width={1800} height={900}/>
 
       <div className="overflow-hidden pb-2 container">
         <motion.div

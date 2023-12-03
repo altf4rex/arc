@@ -328,7 +328,7 @@ const prototype = {
   export const architectureNews = [
     {
       id: 1,
-      img: "/NewsPage.jpg",
+      img: "/NewsImage.jpg",
       title: "Exploring the Timeless Beauty of Historic Architecture",
       slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
       description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
