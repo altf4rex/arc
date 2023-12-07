@@ -10,7 +10,6 @@ const MotionText = ({ children }: { children: React.ReactNode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ ease: easeOut, duration: 1.2 }}
-            
         >
             { children }
         </motion.div>

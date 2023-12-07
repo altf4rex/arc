@@ -20,7 +20,6 @@ const MotionImage = ({img, width, height}: {img: string, width: number, height: 
 
 
   return (
-    <div>
         <div className="overflow-hidden bg " ref={ref}>
         <motion.img 
         style={{ scale: scroll}}
@@ -32,7 +31,7 @@ const MotionImage = ({img, width, height}: {img: string, width: number, height: 
         height={height || 900}
         />
         </div>
-    </div>
+
   );
 };
 
