@@ -30,9 +30,9 @@ const TextAnimation = ({ text }) => {
           variants={letterVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.4}}
+          viewport={{ once: true, amount: 1}}
           custom={index}
-          className=' mt-8 text-2xl font-normal text-sans text-textGray'
+          className='mt-8 text-2xl font-normal text-sans text-textGray'
         >
           {char}
         </motion.span>

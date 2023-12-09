@@ -61,7 +61,7 @@ const MainProjects = () => {
         ))
       }
       </div>
-      <div className="container mt-[126px] mr-[60px] flex justify-end">
+      <div className="container mt-[80px] mr-[60px] flex justify-end">
         <ButtonLink slug={'/projects'} text={"View all projects"} />
       </div>
     </section>

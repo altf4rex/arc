@@ -1,19 +1,17 @@
 "use client"
 import {easeOut, motion} from "framer-motion"
 
-const MotionText = ({ children }: { children: React.ReactNode }) => {
+const MotionText = ({text}: {text: string}) => {
   return (
-    <div className="container">
-        <motion.div
-            className="text-white"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ ease: easeOut, duration: 1.2 }}
-        >
-            { children }
-        </motion.div>
-  </div>
+    <motion.div 
+              className="text-3xl font-bold text-mulish text-main" 
+              initial={{opacity: 0}} 
+              whileInView={{opacity: 1}}
+              transition={{ duration: 2 }}
+              viewport={{ once: true, amount: 0.3 }}
+              >
+                {text}
+      </motion.div>
   )
 }
 

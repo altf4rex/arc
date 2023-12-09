@@ -1,11 +1,10 @@
-
-import Image from "next/image";
 import { about } from "@/constants";
 import MainTeam from "@/components/MainTeam/MainTeam";
 import {team} from "@/constants"
 import MotionImage from "@/components/MotionImage";
 import MotionHeader from "@/components/MotionHeader";
 import MotionText from "@/components/MotionText";
+import TextAnimation from "@/components/TextAnimation";
 
 export default function Page() {
 
@@ -29,48 +28,22 @@ export default function Page() {
       </MotionHeader>
       </div>
         
-        <div className="">
+        <div>
           <div key={about[0].id} className="flex mt-20">
-          <div className="w-[640px] h-[780px]">
-            <MotionImage img={about[0].img} width={640} height={780}/>
-          </div>
-            
-            <div className="ml-12">
-            <MotionText>
-            <h3 className="text-3xl font-bold text-mulish text-main">{about[0].header}</h3>
-            <p className="mt-8 text-2xl font-normal text-sans text-textGray">
-              <br />
-              {about[0].text.split("\n").map((text, index) => (
-                <span key={index}>
-                  {text}
-                  <br />
-                </span>
-              ))}
-            </p>
-            </MotionText> 
+            <div className="w-[640px] h-[780px]">
+              <MotionImage img={about[0].img} width={640} height={780}/>
             </div>
+          <div className="ml-12 max-w-[900px]">
+            <MotionText text={about[0].header}/>
+            <TextAnimation text={about[0].text} />
+          </div>
           </div>
           <div key={about[1].id} className="flex mt-[150px]">
-            <div className="">
-            <MotionText>
-            <h3 className="text-3xl font-bold text-mulish text-main">{about[1].header}</h3>
-            <p className="mt-8 text-2xl font-normal text-sans text-textGray">
-              {about[1].text.split("<br><br>").map((text, index) => (
-                <span key={index}>
-                  {text}
-                  <br />
-                </span>
-              ))}
-            </p>
-            </MotionText>
+            <div className="max-w-[800px]">
+              <MotionText text={about[1].header}/>
+              <TextAnimation text={about[1].text} />
             </div>
-            <Image
-              className="w-[640px] h-[419px]"
-              src={about[1].img}
-              alt="team"
-              width={640}
-              height={419}
-            />
+            <MotionImage img={about[1].img} width={640} height={419}/>
           </div>
         </div>
       </div>

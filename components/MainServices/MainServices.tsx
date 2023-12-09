@@ -65,7 +65,7 @@ const MainServices = () => {
                 {s.header}
               </motion.div>
               <motion.div 
-              className="mt-12 text-base font-normal text-sans text-textGray"
+              className="mt-12 text-xl font-normal text-sans text-textGray"
               initial={{opacity: 0, y: -60}}
               animate={{opacity: 1, y: 0}}
               transition={{duration: 1, delay: (0.4 * (i + 1))}}

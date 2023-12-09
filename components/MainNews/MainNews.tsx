@@ -44,7 +44,7 @@ const MainNews = () => {
             news.map((n, i) => 
             <motion.div
             style={{ zIndex: i === 1 ? i : 0 }}
-            className="w-[380px] h-[380px]"
+            className="default-block"
             variants={newsVariants}
             initial="hidden"
             whileInView="visible"

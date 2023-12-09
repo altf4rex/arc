@@ -117,11 +117,12 @@ export default function Page({ params }: { params: { news: string } }) {
           <h4 className="text-3xl font-bold text-mulish text-main">{news.fullArticleTitle3}</h4>
           </MotionHeader>
         <TextAnimation text={news.fullArticle3} />
+        
         </div>
        
       </section>
 
-      <TextAnimation text={news.fullArticle3} />
+      
 
       <div className="container">
         <div className="py-12 border-b-2 border-textGray"></div>
