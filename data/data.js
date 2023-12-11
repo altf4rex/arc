@@ -166,16 +166,19 @@ export const project = [
     ],
     servicesProvided: [
         {
-          title: "Home Design",
-          description: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
+          img: "/icon-apartment.svg",
+          header: "Home Design",
+          text: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
         },
         {
-          title: "Planning",
-          description: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
+          img: "/icon-city.svg",
+          header: "Planning",
+          text: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
         },
         {
-          title: "Strategy",
-          description: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
+          img: "/icon-paint.svg",
+          header: "Strategy",
+          text: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
         }
       ]
       

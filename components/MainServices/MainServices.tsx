@@ -1,9 +1,10 @@
 "use client";
-import { services } from "@/constants";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const MainServices = () => {
+const MainServices = ({services}) => {
+
   const headerVariants = {
     visible: (i: number) => ({
       y: 0,
