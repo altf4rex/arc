@@ -47,7 +47,7 @@ const paginate = (newDirection: number) => {
   });
 };
   return (
-    <div className="relative mx-[57px] max-w-[1800px] max-xl:mx-[30px] max-lg:mx-0">
+    <div className="relative mx-[57px] max-w-[1800px] max-2xl:mx-[30px] max-lg:mx-0">
 {carouselProjects.map((project, index) => 
         <motion.div
         style={{display: imageIndex + 1 === project.id ? "block" : "none" }}
@@ -56,7 +56,6 @@ const paginate = (newDirection: number) => {
         initial={{ opacity: 0.2}}
         whileInView={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1 }}
-
         >
           <motion.img
           

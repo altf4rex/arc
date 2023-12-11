@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <>
     <button
-        className="z-40 text-mulish text-main text-base font-normal font-semibold absolute right-3 max-lg:block"
+        className="hidden z-40 text-mulish text-main text-base font-normal font-semibold absolute right-3 max-lg:block"
         onClick={() => setMenuOpen(!isMenuOpen)}
       >button</button>
    <nav
