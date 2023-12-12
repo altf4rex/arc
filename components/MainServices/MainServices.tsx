@@ -21,7 +21,7 @@ const MainServices = ({services}) => {
   };
 
   return (
-    <section className="flex items-center flex-col mt-[210px]">
+    <section className="flex items-center flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px]">
       <div className="container">
       <div className="overflow-hidden pb-2">
       <motion.div
@@ -34,15 +34,15 @@ const MainServices = ({services}) => {
       Services
     </motion.div>
    </div>
-        <div className="flex mt-[150px]">
+        <div className="flex mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] max-lg:flex-col">
           {services.map((s, i) => (
             <motion.div
-              className="even:mx-[120px]"
+              className="even:mx-[120px] max-xl:even:mx-[60px] max-lg:even:mx-auto max-lg:mx-auto max-lg:mb-[60px]"
               key={s.header}
               variants={headerVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{amount: 0.8, once: true}}
+              viewport={{amount: 0.5, once: true}}
               custom={i}
               
             >
@@ -57,7 +57,7 @@ const MainServices = ({services}) => {
                 height={40}
               />
               <motion.div 
-              className="mt-8 text-2xl font-bold text-mulish text-main"
+              className="mt-8 text-2xl font-bold text-mulish text-main max-lg:max-w-[400px]"
               initial={{opacity: 0, y: -50}}
               animate={{opacity: 1, y: 0}}
               transition={{duration: 1, delay: (0.3 * (i + 1))}}
@@ -66,7 +66,7 @@ const MainServices = ({services}) => {
                 {s.header}
               </motion.div>
               <motion.div 
-              className="mt-12 text-xl font-normal text-sans text-textGray"
+              className="mt-12 text-xl font-normal text-sans text-textGray max-lg:max-w-[400px]"
               initial={{opacity: 0, y: -60}}
               animate={{opacity: 1, y: 0}}
               transition={{duration: 1, delay: (0.4 * (i + 1))}}

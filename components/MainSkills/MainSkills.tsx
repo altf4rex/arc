@@ -33,9 +33,9 @@ const MainSkills = () => {
   }, [isInView]);
 
   return (
-    <div ref={ref} className="container mt-[210px] flex justify-between">
+    <div ref={ref} className="container mt-[210px] flex justify-between max-2xl:mt-[90px] max-md:mt-[40px] max-sm:flex-col max-sm:items-center">
       {skills.map((s, index) => (
-        <div className="flex items-center" key={s.skill}>
+        <div className="flex items-center max-sm:mt-[60px]" key={s.skill}>
           <div className="text-6xl font-bold text-primary">
             {Math.min(counters[index], s.count)}
           </div>

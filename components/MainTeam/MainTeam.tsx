@@ -23,7 +23,7 @@ const MainTeam = ({team, header}) => {
 
   return (
     
-    <section className="container mt-[210px]">
+    <section className="container mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px]">
 <div className="overflow-hidden pb-2">
 <motion.div
       className="h2 text-left font-bold text-mulish text-main"
@@ -36,12 +36,12 @@ const MainTeam = ({team, header}) => {
       {header}
     </motion.div>
 </div>
-        <div className="grid grid-cols-3 mt-[142px] gap-x-44 gap-y-20">
+        <div className="grid grid-cols-3 mt-[142px] gap-x-44 gap-y-20 max-2xl:mt-[100px] max-md:mt-[50px] max-lg:flex max-lg:flex-col ">
         {
             team.map((t, i) => 
             <div 
               key={i}
-              className="group relative w-max h-max"
+              className="group relative w-max h-max max-lg:mx-auto"
               
             >
               <motion.img 

@@ -41,6 +41,18 @@ img, video {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1280px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .text-sans{
   font-family: 'Work Sans', sans-serif;
 }
