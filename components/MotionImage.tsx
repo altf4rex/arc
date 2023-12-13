@@ -24,7 +24,7 @@ const MotionImage = ({img, width, height}: {img: string, width: number, height: 
         <motion.img 
         style={{ scale: scroll}}
         //style={{ transform: `scale(${scale})` || 'scale(1)'}}
-        className={`w-[${width || 1800}px] h-[${height || 900}px] object-cover max-[1470px]:object-contain`}
+        className={`w-[${width || 1800}px] h-[${height || 900}px] object-cover max-2xl:object-cover max-2xl:w-fit max-2xl:h-fit`}
         src={img}
         alt="news"
         width={width || 1800}

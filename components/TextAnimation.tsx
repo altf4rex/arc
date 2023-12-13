@@ -21,7 +21,7 @@ const TextAnimation = ({ text }) => {
   return (
     <div
     
-    className='container mt-8'
+    className='mt-8'
     >
       {textArray.map((char, index) => (
         <motion.span
@@ -32,7 +32,7 @@ const TextAnimation = ({ text }) => {
           whileInView="visible"
           viewport={{ once: true, amount: 1}}
           custom={index}
-          className='mt-8 text-2xl font-normal text-sans text-textGray'
+          className='mt-8 text-2xl font-normal text-sans text-textGray max-md:text-xl '
         >
           {char}
         </motion.span>

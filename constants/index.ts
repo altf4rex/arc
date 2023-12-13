@@ -78,18 +78,7 @@ export const team = [
         img: "/team2.jpg",
         alt: "team"
     },
-    {
-        name: "Jack WIlshere",
-        post: "CEO / Founder",
-        img: "/team1.jpg",
-        alt: "team"
-    },
-    {
-        name: "Jack WIlshere",
-        post: "CEO / Founder",
-        img: "/team1.jpg",
-        alt: "team"
-    },
+    
     
 ]
 

@@ -19,7 +19,7 @@ const ProjectFilter = ({filter}: {filter: string[]}) => {
       };
 
   return (
-        <ul className="mt-[92px] flex">
+        <ul className="mt-[72px] flex flex-wrap ">
             {
               filter.map((f, i) => 
                 <motion.li 
@@ -27,7 +27,7 @@ const ProjectFilter = ({filter}: {filter: string[]}) => {
                 initial="hidden"
                 animate="visible"
                 custom={i + 1}
-                className="mr-16 text-base text-sans text-main font-normal hover:text-primaryHover">{f}</motion.li>
+                className="mr-16 text-base text-sans text-main font-normal hover:text-primaryHover mt-[20px] max-sm:mr-10">{f}</motion.li>
               )
             }
         </ul>
@@ -35,4 +35,3 @@ const ProjectFilter = ({filter}: {filter: string[]}) => {
 }
 
 export default ProjectFilter
-

@@ -4,7 +4,7 @@ import {easeOut, motion} from "framer-motion"
 const MotionText = ({text}: {text: string}) => {
   return (
     <motion.div 
-              className="text-3xl font-bold text-mulish text-main" 
+              className="container text-3xl font-bold text-mulish text-main" 
               initial={{opacity: 0}} 
               whileInView={{opacity: 1}}
               transition={{ duration: 2 }}

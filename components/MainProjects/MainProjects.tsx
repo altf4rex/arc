@@ -39,7 +39,7 @@ const MainProjects = () => {
   }, [isInView]);
 
   return (
-    <section className="mt-[300px] mx-[60px] max-2xl:mx-[30px] max-md:mx-2 max-2xl:mt-[150px] max-md:mt-[100px]">
+    <section className="mt-[200px] mx-[60px] max-2xl:mx-[30px] max-md:mx-2 max-2xl:mt-[150px] max-md:mt-[100px]">
 <div className="overflow-hidden pb-2 container">
   <motion.div
       className="h2 text-left font-bold text-mulish text-main"
@@ -53,7 +53,7 @@ const MainProjects = () => {
   </div>
       <div
         ref={ref}
-        className="grid-container mt-[150px] max-xl:[flex-container] max-2xl:mt-[100px] max-md:mt-[50px] max-xl:grid-cols-3 max-xl:flex max-xl:flex-col max-xl:items-center"
+        className="grid-container mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] max-xl:flex max-xl:flex-col max-xl:items-center"
       >
         {
         mainProjects.map((p) => (

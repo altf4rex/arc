@@ -19,7 +19,7 @@ const Projects = ({ project }) => {
   };
 
   return (
-    <div className="mt-[52px] max-w-[1920px] flex flex-wrap justify-start">
+    <div className="mt-[52px] max-w-[1920px] flex flex-wrap justify-start max-[1900px]:justify-center">
       {project.map((p, i) => (
         <motion.div
           variants={variants}
@@ -27,7 +27,7 @@ const Projects = ({ project }) => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           key={p.id}
-          className="mr-[27px] mb-[30px]"
+          className="mr-[27px] mb-[30px] max-sm:mr-0"
           custom={i}
         >
           <ProjectCard project={p} />

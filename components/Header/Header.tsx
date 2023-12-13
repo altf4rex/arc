@@ -14,8 +14,8 @@ export const Header = () => {
         onClick={() => setMenuOpen(!isMenuOpen)}
       >button</button>
    <nav
-        className={`max-lg:${isMenuOpen ? 'flex' : 'hidden'} flex justify-between items-center py-6 px-[60px] max-xl:px-[30px] max-lg:px-0 max-lg:flex-col max-lg:absolute max-lg:z-30 max-lg:w-screen max-lg:h-screen max-lg:justify-start max-lg:bg-mainBg`}
-      >
+        className={`max-lg:absolute ${isMenuOpen ? 'bottom-0' : 'bottom-full'} flex justify-between items-center py-6 px-[60px] max-xl:px-[30px] max-lg:px-0 max-lg:flex-col max-lg:z-30 max-lg:w-screen max-lg:h-screen  max-lg:bg-mainBg duration-700`}
+      > 
         <Logo/>
         <Navigation/>
         <p className="text-mulish text-main text-base font-normal font-semibold">+999 (234) 672-22-10</p>
