@@ -33,7 +33,7 @@ return (
             <span className="text-white font-medium">{filteredProject.headeOfFullDescription}</span>
             <TextAnimation text={filteredProject.fullDescription}/>
         </div>
-        <div className="mx-[60px] mt-[150px] flex justify-between max-2xl:flex-wrap">
+        <div className="mx-[60px] max-2xl:mx-[30px] max-md:mx-0 mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] flex justify-between max-2xl:flex-wrap">
             {/* // details-container */}
             {/* {
                 filteredProject.photos?.map((p, i) => 
@@ -43,28 +43,27 @@ return (
                 </div>
                 )
             } */}
-            <div className="">
+            <div className="max-sm:mx-2">
                 <MotionImage img={filteredProject?.photos[0]?.url} width={filteredProject?.photos[0]?.width || 428} height={filteredProject?.photos[0]?.height || 428}/>
             </div>
-            <div className="flex flex-col justify-between ml-2 max-2xl:flex-row ">
-                <div className="max-2xl:flex-1">
+            <div className="flex flex-col justify-between ml-2 max-2xl:flex-row max-2xl:mt-4 max-2xl:ml-0 max-sm:flex-col max-sm:mt-0 ">
+                <div className="max-2xl:w-1/3 max-sm:w-fit max-sm:mx-2 max-sm:mt-2">
                     <MotionImage img={filteredProject?.photos[1]?.url} width={filteredProject?.photos[1]?.width || 428} height={filteredProject?.photos[1]?.height || 428}/>
                 </div>
-                <div className="flex justify-between max-2xl:flex-1 max-2xl:flex-col">
-                    <div className="max-2xl:flex-1 ">
+                <div className="flex justify-between max-2xl:w-2/3 max-sm:w-fit max-sm:flex-col">
+                    <div className="max-2xl:w-1/2 max-2xl:mx-2 max-sm:w-fit max-sm:mt-2">
                         <MotionImage img={filteredProject?.photos[3]?.url} width={filteredProject?.photos[2]?.width || 428} height={filteredProject?.photos[2]?.height || 428}/>
                     </div>
-                    <div className="max-2xl:flex-1 ">
+                    <div className="max-2xl:w-1/2 max-sm:w-fit max-sm:mx-2 max-sm:mt-2">
                         <MotionImage img={filteredProject?.photos[2]?.url} width={filteredProject?.photos[3]?.width || 428} height={filteredProject?.photos[3]?.height || 428}/>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <div className="container mt-[150px]">
-            <h3 className="h4 text-left text-mulish text-main font-bold">Services provided</h3>
-            <div className="mt-[100px] flex justify-between">
-            <MainServices services={filteredProject.servicesProvided}/>
+        <div className="container mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px]">
+            {/* <h3 className="h4 text-left text-mulish text-main font-bold">Services provided</h3> */}
+            <div className="flex justify-between">
+                <MainServices services={filteredProject.servicesProvided}/>
             </div>
         </div>
     </main>

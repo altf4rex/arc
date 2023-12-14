@@ -21,7 +21,7 @@ const MainServices = ({services}) => {
   };
 
   return (
-    <section className="flex items-center flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px]">
+    <section className="flex items-center flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px] max-sm:mt-[50px]">
       <div className="container">
       <div className="overflow-hidden pb-2">
       <motion.div

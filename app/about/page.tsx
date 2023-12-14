@@ -11,14 +11,14 @@ export default function Page() {
   const customEase = [.08,.89,.92,1.02];
  
   return (
-    <main className="py-[150px] max-xl:pt-[80px] max-md:pt-[40px]">
+    <main className="py-[150px] max-xl:py-[80px] max-md:py-[40px]">
       <div className="overflow-hidden pb-2 container">
         <MotionHeader>
           <p className="h1 max-w-[1200px] text-left text-mulish text-main font-bold">Strategy-led <br />
           <span className="text-primary">design</span> in every detail</p>
         </MotionHeader> 
       </div>
-        <div className="my-[100px] mx-[60px] max-2xl:mx-[30px] max-md:mx-0 ">
+        <div className="my-[100px] max-md:my-[60px] mx-[60px] max-2xl:mx-[30px] max-md:mx-0 ">
           <MotionImage img={"/aboutTeam1.jpg"} width={1800} height={900}/>
         </div>
       <div className="container mt-[200px] max-2xl:mt-[150px] max-md:mt-[100px]">
