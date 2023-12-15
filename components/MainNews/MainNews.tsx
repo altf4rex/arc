@@ -17,12 +17,11 @@ const newsVariants = {
     x: i === 3 ? -150 : (i === 1 ? 150 : 0),
     opacity: 0,
   }),
-  
 }
 
 const MainNews = () => {
   return (
-    <section className="container mt-[216px] max-2xl:mt-[150px] max-md:mt-[100px]">
+    <section className="container overflow-hidden mt-[216px] max-2xl:mt-[150px] max-md:mt-[100px]">
       <div className="flex justify-between text-center max-2xl:items-center">
       <div className="overflow-hidden pb-2">
 <motion.div
@@ -49,7 +48,6 @@ const MainNews = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{amount: 0.45, once: true }}
-            
             custom={i + 1}
             >
                 <ProjectCard project={n}/>

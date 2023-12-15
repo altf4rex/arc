@@ -157,6 +157,7 @@ img, video {
 }
 
 
+
 input[type="text"]:focus {
   border-bottom: 2 solid #B9B9B9; 
   outline: none; 
@@ -401,5 +402,56 @@ width: 428px;
 .adaptive-line {
   height: min(calc(140px + 361 * (100vw - 320px) / 1600), 521px);
   
+}
+
+.header-up {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: headerUp 1s ease-in-out forwards;
+}
+
+@keyframes headerUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-down {
+  opacity: 1;
+  transform: translateY(0);
+  animation: headerDown 2s ease-in-out forwards;
+}
+
+@keyframes headerDown {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+.burger-button {
+  transition: transform 0.3s ease;
+  outline: none; 
+  user-select: none; 
+}
+
+.burger-icon-path, .cross-icon-path {
+  transition: transform 0.3s ease;
+  fill: #fff; 
+}
+
+.cross-icon {
+  display: none;
+}
+
+.active .burger-icon {
+  display: none;
+}
+
+.active .cross-icon {
+  display: inline-block;
+  fill: #fff; 
 }
 
