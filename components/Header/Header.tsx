@@ -36,7 +36,7 @@ export const Header = () => {
           isMenuOpen ? "bottom-0" : "bottom-full"
         } flex justify-between items-center py-6 px-[60px] max-xl:px-[30px] max-lg:px-0 max-lg:flex-col max-lg:z-30 max-lg:w-screen max-lg:h-screen max-lg:bg-mainBg max-lg:items-center max-lg:justify-center duration-700`}
       >
-        <Link href="/" className={`${isMenuOpen ? "header-up" : ""} logo flex items-center mr-[70px] max-lg:mr-0 max-lg:text-center`} onClick={() => setMenuOpen(!isMenuOpen)}>
+        <Link href="/" className={`${isMenuOpen ? "header-up" : ""} logo flex items-center mr-[70px] max-lg:mr-0 max-lg:text-center`} onClick={() => setMenuOpen(false)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="41"
@@ -72,7 +72,7 @@ export const Header = () => {
         <div className="flex max-lg:flex-col max-lg:py-12 max-lg:items-center">
           {pages.map((h) => (
             <Link
-              onClick={() => setMenuOpen(!isMenuOpen)}
+              onClick={() => setMenuOpen(false)}
               key={h.page}
               href={`${h.pageSlug}`}
               className={`link ${isMenuOpen ? "header-up" : "" }  

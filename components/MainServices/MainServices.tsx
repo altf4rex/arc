@@ -19,7 +19,7 @@ const MainServices = ({services}) => {
       opacity: 0,
     },
   };
-
+  console.log(services[0].img)
   return (
     <section className="flex items-center flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px] max-sm:mt-[50px]">
       <div className="container">
@@ -36,6 +36,7 @@ const MainServices = ({services}) => {
    </div>
         <div className="flex mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] max-lg:flex-col">
           {services.map((s, i) => (
+            
             <motion.div
               className="even:mx-[120px] max-xl:even:mx-[60px] max-lg:even:mx-auto max-lg:mx-auto max-lg:mb-[60px]"
               key={s.header}
