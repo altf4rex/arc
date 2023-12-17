@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const MainServices = ({services}) => {
@@ -19,10 +17,9 @@ const MainServices = ({services}) => {
       opacity: 0,
     },
   };
-  console.log(services[0].img)
   return (
-    <section className="flex items-center flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px] max-sm:mt-[50px]">
-      <div className="container">
+    <section className="container flex flex-col mt-[210px] max-2xl:mt-[150px] max-md:mt-[100px] max-sm:mt-[50px]">
+      <div>
       <div className="overflow-hidden pb-2">
       <motion.div
       className="h2 text-left font-bold text-mulish text-main"

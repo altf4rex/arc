@@ -12,7 +12,7 @@ const NewsCard = ({news}) => {
     viewport={{ once: true}}
     transition={{ ease: [.08,.89,.92,1.02], duration: 1 }}
     >
-    <Link href={`${news.slug}`} className='group grid grid-cols-3 gap-x-8 p-5 border-b-2 border-[#535353] hover:border-textGray cursor-pointer duration-300 max-xl:flex max-lg:flex-col max-lg:max-w-[400px]'>
+    <Link href={`${news.slug}`} className='group grid grid-cols-3 gap-x-8 p-5 border-b-2 border-[#535353] hover:border-textGray cursor-pointer duration-300 max-xl:flex max-lg:flex-col max-lg:max-w-[400px] max-sm:px-0'>
         <Image
             className='group-hover:rounded-2xl duration-700 '
             src={news.img}

@@ -1,4 +1,3 @@
-
 import { architectureNews } from "@/data/data";
 import MotionImage from "@/components/MotionImage";
 import MotionHeader from "@/components/MotionHeader";
@@ -20,24 +19,20 @@ export default function Page({ params }: { params: { news: string } }) {
         </div>
       </section>
       <section className="my-[82px] flex container max-lg:flex-col max-lg:items-center">
-        <div className="mr-12 max-2xl:mr-0 w-[640px] h-[775px] max-lg:order-2 max-lg:h-min max-lg:max-w-[600px] max-lg:mt-8">
+        <div className="mr-12 max-2xl:mr-0 w-[640px] h-[775px] max-lg:order-2 max-lg:h-min max-lg:max-w-fit max-lg:mt-8">
             <MotionImage img={news.newsImage3} width={640} height={775}/>
         </div>
         <div className="container max-lg:order-1">
-        <MotionHeader>
-          <h4 className="text-3xl font-bold text-mulish text-main">{news.fullArticleTitle3}</h4>
-          </MotionHeader>
-          <TextAnimation text={news.fullArticle3} />
+          <MotionText text={news.fullArticleTitle1} />
+          <TextAnimation text={news.fullArticle1} />
         </div>
       </section>
       <section className="my-[82px] flex container max-lg:flex-col max-lg:items-center">
         <div className="container">
-        <MotionHeader>
-          <h4 className="text-3xl font-bold text-mulish text-main">{news.fullArticleTitle3}</h4>
-          </MotionHeader>
-        <TextAnimation text={news.fullArticle3} />
+        <MotionText text={news.fullArticleTitle2} />
+        <TextAnimation text={news.fullArticle2} />
         </div>
-        <div className="ml-12 max-2xl:ml-0 w-[640px] h-[775px] max-lg:h-min max-lg:max-w-[600px] max-lg:mt-8">
+        <div className="ml-12 max-2xl:ml-0 w-[640px] h-[775px] max-lg:h-min max-lg:max-w-fit max-lg:mt-8">
           <MotionImage img={news.newsImage4} width={640} height={775}/>
         </div>
       </section>
@@ -46,9 +41,7 @@ export default function Page({ params }: { params: { news: string } }) {
           <MotionImage img={news.newsImage5} width={1800} height={900}/>
         </div>
         <div className="container max-lg:order-1">
-        <MotionHeader>
-          <h4 className="text-3xl font-bold text-mulish text-main">{news.fullArticleTitle3}</h4>
-          </MotionHeader>
+        <MotionText text={news.fullArticleTitle3} />
         <TextAnimation text={news.fullArticle3} />
         </div>
       </section>
@@ -57,8 +50,6 @@ export default function Page({ params }: { params: { news: string } }) {
         <div className="mt-8 text-lg text-left text-mulish text-main font-bold">Tags: <span className="text-sans text-textGray font-base">Inspiration, Workspace, Minimal, Decoation</span></div>
         <div className="flex items-center mt-8 text-lg text-left text-mulish text-main font-bold">Share:  <span className="ml-6 text-sans text-textGray font-base"><MediaLinks/></span></div>
       </div>
-      
-      
     </main>
   );
 }

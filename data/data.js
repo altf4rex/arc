@@ -85,7 +85,7 @@ export const news = [
         description: "Explore the harmony of modern architecture and nature.",
         fullDescription: "In this architectural wonder, we have redefined the relationship between the built environment and the natural world. Surrounded by breathtaking landscapes, our innovative design seamlessly merges indoor and outdoor spaces, creating a harmonious retreat for those seeking tranquility and inspiration.",
         formatOfImg: {
-          src: "/news1.jpg",
+          src: "/historic-architecture.jpg",
           width: 428,
           height: 428,
       },
@@ -98,7 +98,7 @@ export const news = [
         description: "Discover futuristic wind farms and sustainable energy.",
         fullDescription: "Our wind farm project is a testament to human ingenuity. The sleek, modern design of wind turbines stands as an iconic symbol of sustainability. Learn how these towering structures capture the wind's energy and convert it into clean, renewable power, bringing us one step closer to a greener, cleaner planet.",
         formatOfImg: {
-          src: "/news2.jpg",
+          src: "/tower-historic-architecture.jpg",
           width: 428,
           height: 428,
       },
@@ -111,7 +111,7 @@ export const news = [
         description: "Explore the future of cityscapes with innovative designs.",
         fullDescription: "Our latest architectural masterpiece is set to reshape city skylines. The impressive tower, topped by a stunning structure reminiscent of a broadcast tower, houses modern living spaces, offices, and recreational areas. Learn how this visionary project is pushing the boundaries of urban architecture and redefining city living.",
         formatOfImg: {
-          src: "/news3.jpg",
+          src: "/NewsPage.jpg",
           width: 428,
           height: 428,
       },
@@ -122,6 +122,156 @@ export const news = [
 export const project = [
   {
     id: 1,
+    name: "GreenScape Urban Restaurant",
+    slug: "projects/greenScape-urban-restaurant",
+    description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern dining.",
+    headOfFullDescription: "Embracing the harmony of nature and modern design, 'GreenScape Urban Restaurant'",
+    fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'GreenScape Urban Restaurant' is not just a dining establishment; it's a work of art that captures the essence of contemporary culinary experiences. Our services for this project include:",
+    details: [
+      {
+        header: "CLIENT",
+        text: "Richard Hurt",
+      },
+      {
+        header: "COMPLETION",
+        text: "February 5th, 2017",
+      },
+      {
+        header: "PROJECT TYPE",
+        text: "Restaurant",
+      },
+      {
+        header: "DESIGNER",
+        text: "Samuel",
+      }
+    ],
+    img: "/urban-restaurant.jpg",
+    photos: [
+      { url: "/urban-restaurant-back.jpg", width: 886, height: 886, type: "item-details-1" },
+      { url: "/detailsProject3.jpg", width: 886, height: 428, type: "item-details-2" },
+      { url: "/detailsProject4.jpg", width: 428, height: 428, type: "item-details-3" },
+      { url: "/detailsProject5.jpg", width: 428, height: 428, type: "item-details-4" }
+    ],
+    servicesProvided: [
+      {
+        img: "/icon-apartment.svg",
+        header: "Design",
+        text: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
+      },
+      {
+        img: "/icon-city.svg",
+        header: "Planning",
+        text: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
+      },
+      {
+        img: "/icon-paint.svg",
+        header: "Strategy",
+        text: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "GreenScape Urban Restaurant",
+    slug: "projects/greenScape-urban-restaurant",
+    description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern dining.",
+    headOfFullDescription: "Embracing the harmony of nature and modern design, 'GreenScape Urban Restaurant'",
+    fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'GreenScape Urban Restaurant' is not just a dining establishment; it's a work of art that captures the essence of contemporary culinary experiences. Our services for this project include:",
+    details: [
+      {
+        header: "CLIENT",
+        text: "Richard Hurt",
+      },
+      {
+        header: "COMPLETION",
+        text: "February 5th, 2017",
+      },
+      {
+        header: "PROJECT TYPE",
+        text: "Restaurant",
+      },
+      {
+        header: "DESIGNER",
+        text: "Samuel",
+      }
+    ],
+    img: "/urban-restaurant.jpg",
+    photos: [
+      { url: "/urban-restaurant-back.jpg", width: 886, height: 886, type: "item-details-1" },
+      { url: "/detailsProject3.jpg", width: 886, height: 428, type: "item-details-2" },
+      { url: "/detailsProject4.jpg", width: 428, height: 428, type: "item-details-3" },
+      { url: "/detailsProject5.jpg", width: 428, height: 428, type: "item-details-4" }
+    ],
+    servicesProvided: [
+      {
+        img: "/icon-apartment.svg",
+        header: "Design",
+        text: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
+      },
+      {
+        img: "/icon-city.svg",
+        header: "Planning",
+        text: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
+      },
+      {
+        img: "/icon-paint.svg",
+        header: "Strategy",
+        text: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "GreenScape Urban Restaurant",
+    slug: "projects/greenScape-urban-restaurant",
+    description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern dining.",
+    headOfFullDescription: "Embracing the harmony of nature and modern design, 'GreenScape Urban Restaurant'",
+    fullDescription: "Brings to life a fusion of architectural brilliance and natural beauty. This project is a testament to our commitment to creating spaces that not only meet the needs of our clients but also celebrate the environment. Our team, led by the visionary architect Samuel, has poured their creativity and expertise into every aspect of this project. 'GreenScape Urban Restaurant' is not just a dining establishment; it's a work of art that captures the essence of contemporary culinary experiences. Our services for this project include:",
+    details: [
+      {
+        header: "CLIENT",
+        text: "Richard Hurt",
+      },
+      {
+        header: "COMPLETION",
+        text: "February 5th, 2017",
+      },
+      {
+        header: "PROJECT TYPE",
+        text: "Restaurant",
+      },
+      {
+        header: "DESIGNER",
+        text: "Samuel",
+      }
+    ],
+    img: "/urban-restaurant.jpg",
+    photos: [
+      { url: "/urban-restaurant-back.jpg", width: 886, height: 886, type: "item-details-1" },
+      { url: "/detailsProject3.jpg", width: 886, height: 428, type: "item-details-2" },
+      { url: "/detailsProject4.jpg", width: 428, height: 428, type: "item-details-3" },
+      { url: "/detailsProject5.jpg", width: 428, height: 428, type: "item-details-4" }
+    ],
+    servicesProvided: [
+      {
+        img: "/icon-apartment.svg",
+        header: "Design",
+        text: "Our team specializes in home design, creating spaces that are both functional and aesthetically pleasing. We pay attention to every detail, from layout and furniture selection to color schemes and decor. Your home's design will reflect your style and needs."
+      },
+      {
+        img: "/icon-city.svg",
+        header: "Planning",
+        text: "We meticulously plan every aspect of your project to ensure it meets your needs and exceeds your expectations. Our planning process covers everything from budgeting and scheduling to materials and logistics. We leave no stone unturned to make your project a success."
+      },
+      {
+        img: "/icon-paint.svg",
+        header: "Strategy",
+        text: "We develop a comprehensive strategy to bring your project to life, from concept to completion. Our strategic approach involves defining goals, outlining tasks, and setting milestones. With a well-thought-out strategy, your project will progress smoothly and efficiently."
+      }
+    ]
+  },
+  {
+    id: 4,
     name: "GreenScape Urban Restaurant",
     slug: "projects/greenScape-urban-restaurant",
     description: "Crafting innovative and sustainable spaces for leading corporations and enterprises worldwide, integrating cutting-edge technology and eco-friendly solutions to redefine the future of modern dining.",
@@ -231,7 +381,7 @@ const prototype = {
     },
     {
       id: 2,
-      img: "/NewsImage1.jpg",
+      img: "/historic-architecture.jpg",
       title: "Exploring the Timeless Beauty of Historic Architecture",
       slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
       description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
@@ -249,7 +399,7 @@ const prototype = {
     },
     {
       id: 3,
-      img: "/NewsImage1.jpg",
+      img: "/historic-architecture.jpg",
       title: "Exploring the Timeless Beauty of Historic Architecture",
       slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
       description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",
@@ -267,7 +417,7 @@ const prototype = {
     },
     {
       id: 4,
-      img: "/NewsImage1.jpg",
+      img: "/historic-architecture.jpg",
       title: "Exploring the Timeless Beauty of Historic Architecture",
       slug: "/news/exploring-the-timeless-beauty-of-historic-architecture",
       description: "Uncover the allure of an aging masterpiece. Join us on a journey through the rich history and architectural significance of an iconic old building.",

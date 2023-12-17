@@ -1,8 +1,6 @@
 import MainServices from "@/components/MainServices/MainServices";
-
 import MotionHeader from "@/components/MotionHeader";
 import MotionImage from "@/components/MotionImage";
-;
 import TextAnimation from "@/components/TextAnimation";
 import {project} from "@/data/data"
 
@@ -14,9 +12,9 @@ export default function Page({params}:{params: { project: string }}){
 return (
     <main className="py-[150px] max-xl:py-[80px] max-md:py-[40px] ">
         <MotionHeader>
-            <h2 className="container h2 text-left text-mulish text-main font-bold">{filteredProject.name}</h2>
+            <h2 className="h2 text-left text-mulish text-main font-bold">{filteredProject.name}</h2>
         </MotionHeader>
-        <div className="container flex justify-between mt-[100px] max-xl:mt-[80px] max-md:mt-[20px] max-sm:flex-wrap max-sm:justify-between ">
+        <div className="container flex justify-between mt-[100px] max-xl:mt-[80px] max-md:mt-[60px] max-sm:mt-[20px] max-sm:flex-wrap max-sm:justify-between">
             {
                 filteredProject.details?.map((d) => 
                     <div className="max-sm:mt-12 max-sm:w-[160px]">
@@ -30,7 +28,7 @@ return (
             <MotionImage img={filteredProject.img} width={1800} height={900}/>
         </div>
         <div className="container mt-[150px] pt-8 text-2xl leading-10 text-sans text-textGray font-normal max-2xl:mt-[80px] max-md:mt-[50px]">
-            <span className="text-white font-medium">{filteredProject.headeOfFullDescription}</span>
+            <span className="text-white font-medium">{filteredProject.headOfFullDescription}</span>
             <TextAnimation text={filteredProject.fullDescription}/>
         </div>
         <div className="mx-[60px] max-2xl:mx-[30px] max-md:mx-0 mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] flex justify-between max-2xl:flex-wrap">

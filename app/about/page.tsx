@@ -12,7 +12,7 @@ export default function Page() {
  
   return (
     <main className="py-[150px] max-xl:py-[80px] max-md:py-[40px]">
-      <div className="overflow-hidden pb-2 container">
+      <div className="overflow-hidden pb-2">
         <MotionHeader>
           <p className="h1 max-w-[1200px] text-left text-mulish text-main font-bold">Strategy-led <br />
           <span className="text-primary">design</span> in every detail</p>
@@ -22,7 +22,7 @@ export default function Page() {
           <MotionImage img={"/aboutTeam1.jpg"} width={1800} height={900}/>
         </div>
       <div className="container mt-[200px] max-2xl:mt-[150px] max-md:mt-[100px]">
-      <div className="overflow-hidden pb-2 container">
+      <div className="overflow-hidden pb-2">
         <MotionHeader>
           <p className="h2 text-left font-bold text-mulish text-main">A few words <span className="text-primary">About us</span></p>
         </MotionHeader>

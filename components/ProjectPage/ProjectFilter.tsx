@@ -19,7 +19,7 @@ const ProjectFilter = ({filter}: {filter: string[]}) => {
       };
 
   return (
-        <ul className="mt-[72px] flex flex-wrap ">
+        <ul className="mt-[72px] flex flex-wrap max-md:px-[14px] container">
             {
               filter.map((f, i) => 
                 <motion.li 

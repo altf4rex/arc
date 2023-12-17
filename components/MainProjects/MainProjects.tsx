@@ -40,7 +40,7 @@ const MainProjects = () => {
 
   return (
     <section className="mt-[200px] mx-[60px] max-2xl:mx-[30px] max-md:mx-2 max-2xl:mt-[150px] max-md:mt-[100px]">
-<div className="overflow-hidden pb-2 container">
+<div className="pb-2 container">
   <motion.div
       className="h2 text-left font-bold text-mulish text-main"
       initial={{ opacity: 0, translateY: "100%" }}

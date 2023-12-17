@@ -20,6 +20,7 @@ const headerVariants = {
   },
 };
 
+const customEase = [.08,.89,.92,1.02];
 
 // const swipeConfidenceThreshold = 10000;
 // const swipePower = (offset: number, velocity: number) => {
@@ -62,7 +63,7 @@ const paginate = (newDirection: number) => {
           src={project.img} 
           alt={project.name}  
           className="brightness-75 object-cover w-screen h-screen max-md:h-screen max-md:h-screen max-md:w-screen max-md:object-cover"/>
-              <div className="absolute top-[20%] left-[20%] z-10 max-xl:top-[15%] max-md:left-[10%] max-md:top-[20%] max-sm:left-[5%] max-[400px]:left-[2%]">
+              <div className="absolute top-[20%] left-[20%] z-10 max-xl:top-[15%] max-md:left-[10%] max-md:top-[20%] max-sm:left-[5%] max-[400px]:left-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="158"

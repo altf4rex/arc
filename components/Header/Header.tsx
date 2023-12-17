@@ -31,10 +31,9 @@ export const Header = () => {
 </button>
 
       <nav
-        
         className={`max-lg:absolute ${
           isMenuOpen ? "bottom-0" : "bottom-full"
-        } flex justify-between items-center py-6 px-[60px] max-xl:px-[30px] max-lg:px-0 max-lg:flex-col max-lg:z-30 max-lg:w-screen max-lg:h-screen max-lg:bg-mainBg max-lg:items-center max-lg:justify-center duration-700`}
+        } flex justify-between items-center py-6 px-[60px] max-xl:px-[30px] max-lg:px-0 max-lg:flex-col max-lg:z-30 max-lg:w-screen max-lg:h-screen max-lg:bg-mainBg max-lg:items-center max-lg:justify-between duration-700`}
       >
         <Link href="/" className={`${isMenuOpen ? "header-up" : ""} logo flex items-center mr-[70px] max-lg:mr-0 max-lg:text-center`} onClick={() => setMenuOpen(false)}>
           <svg
@@ -77,8 +76,8 @@ export const Header = () => {
               href={`${h.pageSlug}`}
               className={`link ${isMenuOpen ? "header-up" : "" }  
               ${
-                pathname === h.pageSlug ? "text-primary" : "text-main"
-              } mr-12 text-mulish text-main text-sm font-normal font-semibold hover:text-primaryHover max-lg:mb-6 max-lg:text-base max-lg:mr-0`}
+                pathname.split("/").includes(h.page.toLocaleLowerCase()) ? "text-primary" : "text-main"
+              } mr-12 text-mulish text-main text-sm font-normal font-semibold hover:text-primaryHover max-lg:mb-8 max-lg:text-lg max-lg:mr-0`}
             >
               {h.page}
             </Link>
