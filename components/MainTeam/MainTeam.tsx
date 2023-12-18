@@ -1,9 +1,10 @@
 "use client"
 
+import { TeamMemberType } from "@/types";
 import { motion } from "framer-motion";
 
     
-const MainTeam = ({team, header}) => {
+const MainTeam = ({team, header}: {team: TeamMemberType[], header: string}) => {
     const headerVariants = {
         visible: (i: number) => ({
           y: 0,

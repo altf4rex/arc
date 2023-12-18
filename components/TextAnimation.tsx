@@ -1,8 +1,6 @@
 "use client"
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useRef, useState } from 'react';
-const TextAnimation = ({ text }) => {
+import { motion } from "framer-motion";
+const TextAnimation = ({ text }: {text: string}) => {
 
   const textArray = text.split('');
 
@@ -25,7 +23,6 @@ const TextAnimation = ({ text }) => {
     >
       {textArray.map((char, index) => (
         <motion.span
-        
           key={index}
           variants={letterVariants}
           initial="hidden"

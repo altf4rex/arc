@@ -1,20 +1,17 @@
-"use client"
-import {Project} from "@/types"
+import { MainNewsType, MainProjectType, ProjectType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-export const ProjectCard = ({ project, scale }: { project: Project; scale?: string }) => {
-  
+export const ProjectCard = ({ project, scale }: { project: ProjectType | MainProjectType | MainNewsType; scale?: string }) => {
   return (
-    <div key={project.id} className={`${project?.type || 'default-block'} w-[${project?.formatOfImg?.width || 428}px] h-[${project?.formatOfImg?.height || 428}px] hover-project-block relative flex flex-wrap overflow-hidden max-xl:w-fit max-xl:h-fit`}>
+    <div key={project.id} className={`${('type' in project ? project.type : 'default-block')} w-[${('formatOfImg' in project ? project.formatOfImg?.width : 428)}px] h-[${('formatOfImg' in project ? project.formatOfImg?.height : 428)}px] hover-project-block relative flex flex-wrap overflow-hidden max-xl:w-fit max-xl:h-fit`}>
       <Image
         style={{ transform: scale || 'scale(1)' }}
         className={`hover-project-img top-0 object-cover max-md:max-h-[360px] max-md:max-w-[360px] max-xl:brightness-50 max-md:brightness-75`}
-        src={project?.formatOfImg?.src || project.img}
+        src={('formatOfImg' in project ? project.formatOfImg?.src : project.img)}
         alt="project"
-        width={project?.formatOfImg?.width || 428}
-        height={project?.formatOfImg?.height || 428}
+        width={('formatOfImg' in project ? project.formatOfImg?.width : 428)}
+        height={('formatOfImg' in project ? project.formatOfImg?.height : 428)}
       />
       <Link href={project.slug} className={`hover-project-text block absolute pt-[6%] pl-[8%] w-full h-full bg-mainBg border border-primary max-xl:bg-transparent max-md:border-none`}>
         <h3 className="pt-6 max-w-[300px] text-3xl text-left text-mulish text-main font-bold max-md:pt-[260px]">

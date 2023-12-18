@@ -42,6 +42,7 @@ const MainNews = () => {
         {
             news.map((n, i) => 
             <motion.div
+            key={n.id}
             style={{ zIndex: i === 1 ? i : 0 }}
             className="default-block max-lg:mx-auto max-lg:mt-[60px]"
             variants={newsVariants}

@@ -1,9 +1,10 @@
 "use client"
+import { NewsPageType } from "@/types"
 import {motion} from "framer-motion"
 import Image from 'next/image'
 import Link from 'next/link'
 
-const NewsCard = ({news}) => {
+const NewsCard = ({news}: {news: NewsPageType}) => {
   return (
     <motion.div 
     className="w-fit h-fit mt-10 max-lg:mt-14 max-lg:mx-auto"

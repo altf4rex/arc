@@ -1,8 +1,7 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 const MotionImage = ({img, width, height}: {img: string, width: number, height: number}) => {
 
@@ -23,7 +22,6 @@ const MotionImage = ({img, width, height}: {img: string, width: number, height: 
         <div className="overflow-hidden" ref={ref}>
         <motion.img 
         style={{ scale: scroll}}
-        //style={{ transform: `scale(${scale})` || 'scale(1)'}}
         className={`w-[${width || 1800}px] h-[${height || 900}px] object-cover max-2xl:w-fit max-2xl:h-fit`}
         src={img}
         alt="news"
@@ -36,36 +34,3 @@ const MotionImage = ({img, width, height}: {img: string, width: number, height: 
 };
 
 export default MotionImage;
-
-
-// const [scale, setScale] = useState(1);
-
-// const isInView = useInView(ref)
-
-
-  // useEffect(() => {
-   
-  //   if (isInView) {
-      
-  //     const handleScroll = () => {
-      
-  //       if (ref.current) {
-         
-  //         const containerHeight = ref.current.offsetHeight;
-  //         const scrollPosition = window.scrollY;
-  //         const scaleFactor = 0.2;
-  //         const maxScale = 1.6;
-  //         const newScale = Math.min(maxScale, 1 + scaleFactor * scrollPosition / containerHeight);
-  //         setScale(newScale);
-  //       }
-  //     } 
-
-  //     window.addEventListener('scroll', handleScroll);
-
-  //     return () => {
-  //       window.removeEventListener('scroll', handleScroll);
-  //     };
-  //   }
-    
-    
-  // }, [isInView]);

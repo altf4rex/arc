@@ -1,8 +1,9 @@
 "use client"
 import { ProjectCard } from "@/components/ProjectCard/ProjectCard";
+import { ProjectType } from "@/types";
 import { motion } from "framer-motion";
 
-const Projects = ({ project }) => {
+const Projects = ({ project }: { project: ProjectType[] }) => {
   const variants = {
     visible: (i: number) => ({
       opacity: 1,

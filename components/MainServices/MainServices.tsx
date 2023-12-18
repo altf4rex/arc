@@ -1,7 +1,8 @@
 "use client";
+import { ServiceType } from "@/types";
 import { motion } from "framer-motion";
 
-const MainServices = ({services}) => {
+const MainServices = ({services}: {services: ServiceType[]}) => {
 
   const headerVariants = {
     visible: (i: number) => ({
@@ -24,7 +25,7 @@ const MainServices = ({services}) => {
       <motion.div
       className="h2 text-left font-bold text-mulish text-main"
       initial={{ opacity: 0, translateY: "100%" }}
-      whileInView={{ opacity: 1, translateY: 0  }}
+      whileInView={{ opacity: 1, translateY: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 1 }}
     >
@@ -33,7 +34,6 @@ const MainServices = ({services}) => {
    </div>
         <div className="flex mt-[150px] max-2xl:mt-[100px] max-md:mt-[50px] max-lg:flex-col">
           {services.map((s, i) => (
-            
             <motion.div
               className="even:mx-[120px] max-xl:even:mx-[60px] max-lg:even:mx-auto max-lg:mx-auto max-lg:mb-[60px]"
               key={s.header}
@@ -55,12 +55,11 @@ const MainServices = ({services}) => {
                 height={40}
               />
               <motion.div 
-              className="mt-8 text-2xl font-bold text-mulish text-main max-lg:max-w-[400px]"
-              initial={{opacity: 0, y: -50}}
-              animate={{opacity: 1, y: 0}}
-              transition={{duration: 1, delay: (0.3 * (i + 1))}}
+                className="mt-8 text-2xl font-bold text-mulish text-main max-lg:max-w-[400px]"
+                initial={{opacity: 0, y: -50}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 1, delay: (0.3 * (i + 1))}}
               >
-
                 {s.header}
               </motion.div>
               <motion.div 

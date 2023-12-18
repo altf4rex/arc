@@ -99,12 +99,15 @@ export const skills = [
 
 export const footerLinks = [
     {
-    array:["About", "Career", "Contact"]
+        id: 1,
+        array:["About", "Career", "Contact"]
     },
     {
+        id: 2,
       array:["Help", "Site Map", "Our Location"]
     },
     {
+        id: 3,
       array:["Privacy Policy", "Term & Conditions"]
     },
     

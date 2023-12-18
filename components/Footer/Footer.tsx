@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
       <div className="flex w-[700px] mt-8 justify-between items-end flex-wrap max-lg:mb-20 max-md:w-screen max-md:px-[20px] max-[520px]:flex-col max-[520px]:items-center">
         {footerLinks.map((m) => (
-          <div className="flex flex-col max-[520px]:items-center max-[520px]:mt-8">
+          <div className="flex flex-col max-[520px]:items-center max-[520px]:mt-8" key={m.id}>
             {m.array.map((a) => (
               <Link
                 href="/"

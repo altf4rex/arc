@@ -1,4 +1,4 @@
-import { architectureNews } from "@/data/data";
+import { newsPage } from "@/data/data";
 import MotionImage from "@/components/MotionImage";
 import MotionHeader from "@/components/MotionHeader";
 import MotionText from "@/components/MotionText";
@@ -6,7 +6,7 @@ import MediaLinks from "@/components/MediaLinks";
 import TextAnimation from "@/components/TextAnimation";
 
 export default function Page({ params }: { params: { news: string } }) {
-  let news = architectureNews.filter((a) => a.slug === `/news/${params.news}`)[0];
+  let news = newsPage.filter((a) => a.slug === `/news/${params.news}`)[0];
   
   return (
     <main className="py-[150px] max-xl:py-[80px] max-md:py-[40px]">

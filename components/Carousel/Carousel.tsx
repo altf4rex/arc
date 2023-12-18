@@ -1,8 +1,4 @@
-import { carouselProjects } from "@/data/data";
-import CarouselButton from "./CarouselButton";
 import CarouselMainFrame from "./CarouselMainFrame";
-
-
 
 const Carousel = () => {
   return (
@@ -11,9 +7,3 @@ const Carousel = () => {
 };
 
 export default Carousel
-
-
-
-
-
-

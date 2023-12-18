@@ -5,11 +5,6 @@ import ButtonLink from "../ButtonLink";
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from 'react';
 const MainProjects = () => {
-
-  // const vertical = mainProjects.slice(0,1)
-  // const square = mainProjects.slice(1,3)
-  // const horizontal = mainProjects.slice(3,4)\
-
   const ref = useRef<HTMLDivElement | null>(null);
   const [scale, setScale] = useState(0.9);
 
@@ -57,7 +52,7 @@ const MainProjects = () => {
       >
         {
         mainProjects.map((p) => (
-          <ProjectCard project={p} scale={`scale(${scale})`}/>
+          <ProjectCard project={p} scale={`scale(${scale})`} key={p.id}/>
         ))
       }
       </div>

@@ -2,13 +2,10 @@ import MainServices from "@/components/MainServices/MainServices";
 import MotionHeader from "@/components/MotionHeader";
 import MotionImage from "@/components/MotionImage";
 import TextAnimation from "@/components/TextAnimation";
-import {project} from "@/data/data"
-
-
-
+import {projects} from "@/data/data"
 
 export default function Page({params}:{params: { project: string }}){
-    let filteredProject = project.filter((a) => a.slug === `projects/${params.project}`)[0];
+    let filteredProject = projects.filter((a) => a.slug === `projects/${params.project}`)[0];
 return (
     <main className="py-[150px] max-xl:py-[80px] max-md:py-[40px] ">
         <MotionHeader>
@@ -17,7 +14,7 @@ return (
         <div className="container flex justify-between mt-[100px] max-xl:mt-[80px] max-md:mt-[60px] max-sm:mt-[20px] max-sm:flex-wrap max-sm:justify-between">
             {
                 filteredProject.details?.map((d) => 
-                    <div className="max-sm:mt-12 max-sm:w-[160px]">
+                    <div className="max-sm:mt-12 max-sm:w-[160px]" key={d.header}>
                         <p className="text-base text-mulish text-main font-semibold">{d.header}</p>
                         <p className="pt-5 text-base text-sans text-textGray font-normal max-sm:pt-4">{d.text}</p>
                     </div>

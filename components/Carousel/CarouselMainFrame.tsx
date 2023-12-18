@@ -1,8 +1,7 @@
-
 'use client'
 import * as React from "react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { carouselProjects } from "@/data/data";
 import ButtonLink from "../ButtonLink";
 
@@ -21,11 +20,6 @@ const headerVariants = {
 };
 
 const customEase = [.08,.89,.92,1.02];
-
-// const swipeConfidenceThreshold = 10000;
-// const swipePower = (offset: number, velocity: number) => {
-//   return Math.abs(offset) * velocity;
-// };
 
 export const Carousel = () => {
   const [[page, direction], setPage] = useState([0, 0]);
@@ -59,7 +53,6 @@ const paginate = (newDirection: number) => {
         transition={{ ease: "easeOut", duration: 1 }}
         >
           <motion.img
-          
           src={project.img} 
           alt={project.name}  
           className="brightness-75 object-cover w-screen h-screen max-md:h-screen max-md:h-screen max-md:w-screen max-md:object-cover"/>

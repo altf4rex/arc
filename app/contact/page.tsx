@@ -1,21 +1,15 @@
-"use client"
 import Image from "next/image"
-import { motion } from "framer-motion";
 import MediaLinks from "@/components/MediaLinks";
 import { ContactForm } from "@/components/MainContact/ContactForm";
+import MotionHeader from "@/components/MotionHeader";
 
 const Contact = () => {
   return (
     <div className="py-[150px] max-xl:py-[80px] max-md:py-[40px]">
       <div className="overflow-hidden pb-2 container">
-      <motion.div
-      className="h1 text-left text-mulish text-main font-bold"
-      initial={{ opacity: 0, translateY: "100%" }}
-      animate={{ opacity: 1, translateY: 0  }}
-      transition={{ duration: 1 }}
-    >
-      Contact
-    </motion.div>
+        <MotionHeader>
+          <h1 className="h1 text-left text-mulish text-main font-bold">Contact</h1>
+        </MotionHeader>
     </div>
     <div className="relative max-sm:mt-[50px]">
       <Image 

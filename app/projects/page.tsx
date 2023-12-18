@@ -2,7 +2,7 @@ import MotionHeader from "@/components/MotionHeader";
 import ProjectFilter from "@/components/ProjectPage/ProjectFilter";
 import Projects from "@/components/ProjectPage/Projects";
 import {filter} from "@/constants";
-import {project} from "@/data/data";
+import {projects} from "@/data/data";
 
 const page = () => {
   return (
@@ -13,7 +13,7 @@ const page = () => {
         </MotionHeader>
         <ProjectFilter filter={filter} />
       </div>
-      <Projects project={project}/> 
+      <Projects project={projects}/> 
     </main>
   )
 }

@@ -1,8 +1,6 @@
-
 import MotionHeader from "@/components/MotionHeader"
 import NewsCard from "@/components/NewsCards/NewsCard"
-import {architectureNews} from "@/data/data"
-
+import {newsPage} from "@/data/data"
 
 const page = () => {
   return (
@@ -12,8 +10,8 @@ const page = () => {
         </MotionHeader> 
       <div className="container mt-[100px]">
         {
-          architectureNews.map(a => 
-              <NewsCard news={a}/>
+          newsPage.map(a => 
+              <NewsCard news={a} key={a.id}/>
             ) 
         }
       </div> 
