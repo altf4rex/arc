@@ -1,6 +1,6 @@
 'use client'
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { carouselProjects } from "@/data/data";
 import ButtonLink from "../ButtonLink";
@@ -41,6 +41,21 @@ const paginate = (newDirection: number) => {
     return [wrap(0, carouselProjects.length - 1, nextPage), newDirection];
   });
 };
+
+const startAutoPlay = () => {
+  const intervalId = setInterval(() => {
+    paginate(1);
+  }, 8000);
+
+  return () => clearInterval(intervalId);
+};
+
+useEffect(() => {
+  const stopAutoPlay = startAutoPlay();
+
+  return stopAutoPlay;
+}, []);
+
   return (
     <div className="relative">
 {carouselProjects.map((project, index) => 

@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-mainBg'>
-      <body className='max-width'>
+    <html lang="en" className='bg-mainBg scroll-smooth'>
+      <body className='max-width' >
         <Provider>
           <Header/>
           {children}

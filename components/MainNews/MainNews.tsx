@@ -28,8 +28,8 @@ const MainNews = () => {
       className="h2 text-left font-bold text-mulish text-main "
       initial={{ opacity: 0, translateY: "100%" }}
       whileInView={{ opacity: 1, translateY: 0  }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 0}}
+      transition={{ duration: 1.2 }}
     >
       
       Latest news
