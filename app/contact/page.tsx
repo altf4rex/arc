@@ -33,7 +33,11 @@ const Contact = () => {
     </div>
     </div>
     <div className="container ml-[140px] my-[100px] max-xl:my-[80px] max-md:my-[40px]">
-            <p className="mt-8 text-3xl text-left text-mulish text-main font-bold">Let's grab a coffee and jump on<br/>conversation <span className="text-primary">chat with us.</span></p>
+    <p className="mt-8 text-3xl text-left text-mulish text-main font-bold">
+  Let&apos;s grab a coffee and jump on<br/>
+  conversation <span className="text-primary">chat with us.</span>
+</p>
+
             <form className="flex flex-col max-w-[600px]">
                 <ContactForm place={"Name"}/>
                 <ContactForm place={"Email*"}/>
