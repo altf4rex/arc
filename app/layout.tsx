@@ -20,10 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-mainBg scroll-smooth'>
-      <body className='max-width' >
+      <body className='max-width'>
         <Provider>
           <Header/>
-          {children}
+            {children}
           <Footer/>
         </Provider>
       </body>

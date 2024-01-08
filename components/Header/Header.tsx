@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <>
 <button
-  className={`hidden z-40 text-mulish text-main text-base font-normal font-semibold absolute right-3 max-lg:block mt-2 mr-2 burger-button ${isMenuOpen ? "active" : ""}`}
+  className={`hidden z-40 text-mulish text-main text-base font-normal font-semibold absolute right-3 max-lg:block mt-6 mr-6 burger-button ${isMenuOpen ? "active" : ""}`}
   onClick={() => setMenuOpen(!isMenuOpen)}
 >
   <svg className="burger-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
